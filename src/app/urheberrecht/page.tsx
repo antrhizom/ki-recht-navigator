@@ -252,7 +252,8 @@ export default function UrheberrechtPage() {
                 GKIoW – Geschlossene KI ohne Weitergabe
               </h3>
               <p className="text-xs text-emerald-600 italic mb-2 print:text-[10px] print:mb-1">
-                z.B. lokal installierte Modelle, kantonale/schulinterne KI-Infrastruktur – Daten bleiben in der Schule
+                z.B. lokal installierte Modelle, kantonale/schulinterne KI-Infrastruktur – sämtliche Daten verbleiben
+                innerhalb der Verwaltungseinheit, werden nicht an Dritte weitergegeben und nicht für Training verwendet
               </p>
               <ul className="text-sm text-emerald-700 space-y-1 print:text-[10px] print:space-y-0">
                 <li>✓ <strong>Hochladen (Vervielfältigung)</strong> – im Eigengebrauch zulässig (schulintern und betriebsintern)</li>
@@ -261,6 +262,28 @@ export default function UrheberrechtPage() {
                 <li>✗ Vollständige Werkexemplare – <strong>Gegenausnahme greift auch hier</strong></li>
                 <li>→ <strong>Sicherste Option</strong> für urheberrechtlich geschützte Materialien im schulischen Einsatz</li>
               </ul>
+
+              <div className="mt-3 p-3 bg-white rounded-lg border border-emerald-200 print:p-2 print:mt-1.5">
+                <h4 className="text-xs font-bold text-emerald-800 mb-1.5 print:text-[10px] print:mb-1">Warum GKIoW urheberrechtlich vergleichbar mit einem Cloudspeicher ist</h4>
+                <p className="text-xs text-slate-600 mb-2 print:text-[9px] print:mb-1">
+                  Bei GKIoW werden Eingabedaten <strong>weder für Trainingszwecke genutzt noch dauerhaft gespeichert</strong>.
+                  Die Daten werden nur für die Verarbeitung des konkreten Prompts verwendet und danach verworfen.
+                  Dies ist urheberrechtlich vergleichbar mit einem <strong>schulinternen Cloudspeicher</strong> (z.B. kantonaler Server):
+                  Die Vervielfältigung dient ausschliesslich dem Eigengebrauch, es erfolgt keine Bekanntgabe an Dritte.
+                </p>
+                <p className="text-xs text-slate-600 mb-2 print:text-[9px] print:mb-1">
+                  <strong>Unterschied zu OKI/GKImW:</strong> Bei offenen Modellen und geschlossenen Modellen mit Weitergabe
+                  werden die Daten an externe Anbieter übermittelt. Selbst wenn ein Anbieter verspricht, die Daten
+                  «nicht für Training zu verwenden», liegt urheberrechtlich bereits in der <strong>Übermittlung an den Dritten</strong> eine
+                  relevante Handlung. Werden Daten beim Anbieter gespeichert (auch ohne Trainingsnutzung), bleibt eine
+                  <strong> Vervielfältigung im Sinne von Art. 10 URG</strong> bestehen, die nicht unter Art. 24a URG (vorübergehende
+                  Vervielfältigung) fällt – denn diese Ausnahme verlangt, dass die Kopie <strong>flüchtig oder begleitend</strong> ist
+                  und <strong>keine eigenständige wirtschaftliche Bedeutung</strong> hat (vgl. Vischer, 2024).
+                </p>
+                <p className="text-xs text-emerald-700 font-semibold print:text-[9px]">
+                  → GKIoW vermeidet dieses Problem vollständig: keine Übermittlung, keine externe Speicherung, keine Drittnutzung.
+                </p>
+              </div>
             </div>
           </section>
 
