@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
+import Link from "next/link";
 import {
   Search,
   BookOpen,
@@ -22,6 +23,7 @@ import {
   Hash,
   Scale,
   Sparkles,
+  FileText,
 } from "lucide-react";
 import {
   questions,
@@ -442,13 +444,21 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="hidden sm:flex items-center gap-2 text-xs text-slate-500">
-              <Sparkles className="w-4 h-4 text-indigo-400" />
-              <span>{questions.length} Fragen</span>
-              <span className="mx-1">|</span>
-              <span>{CATEGORIES.length} Kategorien</span>
-              <span className="mx-1">|</span>
-              <span>3 KI-Modell-Typen</span>
+            <div className="hidden sm:flex items-center gap-3">
+              <Link
+                href="/datenschutz"
+                className="flex items-center gap-1.5 text-xs font-medium text-emerald-600 hover:text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100"
+              >
+                <Shield className="w-3.5 h-3.5" />
+                Datenschutz-Info
+              </Link>
+              <Link
+                href="/urheberrecht"
+                className="flex items-center gap-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 hover:bg-blue-100"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                Urheberrecht-Info
+              </Link>
             </div>
           </div>
         </div>
@@ -685,8 +695,36 @@ export default function Home() {
           </div>
         )}
 
+        {/* Info Documents Links (visible on all screens) */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <Link
+            href="/datenschutz"
+            className="flex items-center gap-3 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-200 hover:shadow-md hover:border-emerald-300"
+          >
+            <div className="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center flex-shrink-0">
+              <Shield className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-emerald-800">Datenschutz-Info</p>
+              <p className="text-xs text-emerald-600">Ausdruckbarer Leitfaden zum Datenschutz beim KI-Einsatz</p>
+            </div>
+          </Link>
+          <Link
+            href="/urheberrecht"
+            className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200 hover:shadow-md hover:border-blue-300"
+          >
+            <div className="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center flex-shrink-0">
+              <FileText className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <p className="text-sm font-bold text-blue-800">Urheberrecht-Info</p>
+              <p className="text-xs text-blue-600">Ausdruckbarer Leitfaden zum Urheberrecht beim KI-Einsatz</p>
+            </div>
+          </Link>
+        </div>
+
         {/* Footer */}
-        <footer className="mt-12 py-8 border-t border-slate-200 text-center">
+        <footer className="mt-8 py-8 border-t border-slate-200 text-center">
           <p className="text-xs text-slate-400">
             Basierend auf dem Fragekatalog Sek II (FINAL) | Rechtliche Fragen zum KI-Einsatz an
             Schulen im Kanton Zürich
