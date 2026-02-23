@@ -146,91 +146,122 @@ export default function UrheberrechtPage() {
           {/* 3. Eigengebrauchsschranken */}
           <section className="mb-6 print:mb-3">
             <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
-              3. Die Eigengebrauchsschranken (Art. 19 URG)
+              3. Die Eigengebrauchsschranken (Art. 19 URG) – enger als oft angenommen
             </h2>
+
+            <div className="p-3 bg-red-50 border border-red-300 rounded-lg mb-3 print:p-2 print:mb-2 print:rounded-none">
+              <p className="text-sm text-red-700 font-semibold print:text-[10px]">
+                Wichtig: Die Eigengebrauchsschranken sind <strong>keine Generalerlaubnis</strong>. Sie erlauben nur eng umschriebene Handlungen
+                unter bestimmten Voraussetzungen. Bei KI-Einsatz gelten zusätzliche Einschränkungen, da der KI-Anbieter als «Dritter» handelt und
+                Dritte nur Vervielfältigungen – <strong>keine Bearbeitungen</strong> – vornehmen dürfen.
+              </p>
+            </div>
 
             <div className="space-y-3 print:space-y-1.5">
               {/* Schulintern */}
               <div className="p-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg print:p-2 print:rounded-none">
                 <h3 className="text-sm font-bold text-blue-700 mb-1 print:text-[11px]">
-                  Schulinterner Gebrauch (Kontrolle bei der Lehrperson)
+                  Schulinterner Gebrauch (alleinige Kontrolle bei der LP)
                 </h3>
+                <p className="text-xs text-blue-600 italic mb-2 print:text-[10px] print:mb-1">
+                  Breiteste Schranke – greift nur, wenn die LP die alleinige Kontrolle behält und keine schulische Stelle involviert ist
+                </p>
                 <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
-                  <li>✓ <strong>Vervielfältigung</strong> (Hochladen) erlaubt</li>
-                  <li>✓ <strong>Bearbeitung und Änderung</strong> erlaubt</li>
-                  <li>✓ Dritte dürfen <strong>Vervielfältigungen</strong> vornehmen (= KI-Anbieter als Dritter)</li>
-                  <li>✗ Dritte dürfen <strong>keine Bearbeitungen</strong> vornehmen</li>
-                  <li>→ Wichtigste Voraussetzung: Die LP hat <strong>alleinige Kontrolle</strong> über die Inhalte</li>
+                  <li>✓ <strong>Vervielfältigung</strong> (Hochladen) erlaubt – aber nur Auszüge, keine vollständigen Werkexemplare</li>
+                  <li>✓ <strong>Bearbeitung und Änderung</strong> durch die LP selbst erlaubt</li>
+                  <li>✓ Dritte (= KI-Anbieter) dürfen <strong>Vervielfältigungen</strong> vornehmen</li>
+                  <li>✗ Dritte dürfen <strong>keine Bearbeitungen</strong> vornehmen – dies ist eine häufig übersehene Einschränkung</li>
+                  <li>✗ <strong>Gilt nicht bei OKI</strong> – keine Kontrolle über Datenverwendung durch Anbieter</li>
                 </ul>
               </div>
 
               {/* Betriebsintern */}
               <div className="p-4 border-l-4 border-amber-500 bg-amber-50 rounded-r-lg print:p-2 print:rounded-none">
                 <h3 className="text-sm font-bold text-amber-700 mb-1 print:text-[11px]">
-                  Betriebsinterner Gebrauch (Schule involviert)
+                  Betriebsinterner Gebrauch (Schule involviert) – eingeschränkter
                 </h3>
+                <p className="text-xs text-amber-600 italic mb-2 print:text-[10px] print:mb-1">
+                  Greift, sobald die Schule (Schulleitung, Fachschaft, etc.) Einfluss oder Kontrolle hat
+                </p>
                 <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
-                  <li>✓ <strong>Vervielfältigung</strong> (Hochladen) erlaubt</li>
+                  <li>✓ <strong>Vervielfältigung</strong> (Hochladen) erlaubt – aber nur Auszüge</li>
                   <li>✗ <strong>Keine Bearbeitung/Änderung</strong> ohne Zustimmung des Rechtsinhabers</li>
-                  <li>→ Wenn die Schule Kontrolle/Einfluss hat, gilt diese einschränkendere Schranke</li>
+                  <li>✗ <strong>Keine Bearbeitungen durch Dritte</strong> (= KI-Anbieter)</li>
+                  <li>→ In der Praxis bedeutet das: KI darf nur als «Kopierer» dienen, nicht als «Bearbeiter»</li>
                 </ul>
               </div>
 
               {/* Gegenausnahme */}
               <div className="p-4 border-l-4 border-red-500 bg-red-50 rounded-r-lg print:p-2 print:rounded-none">
                 <h3 className="text-sm font-bold text-red-700 mb-1 print:text-[11px]">
-                  Gegenausnahme: Vollständige Werkexemplare
+                  Gegenausnahme: Vollständige Werkexemplare (Art. 19 Abs. 3 URG)
                 </h3>
                 <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
-                  <li>✗ Keine (weitgehend) vollständige Vervielfältigung von im Handel erhältlichen Werkexemplaren</li>
-                  <li>✗ Nicht das gesamte Schulbuch, Theaterstück oder Werksammlung hochladen</li>
-                  <li>→ Einzelne Kapitel, Auszüge oder Arbeitsblätter sind möglich</li>
+                  <li>✗ <strong>Nie</strong> (weitgehend) vollständige Vervielfältigung von im Handel erhältlichen Werkexemplaren</li>
+                  <li>✗ Kein gesamtes Schulbuch, Theaterstück, Werksammlung oder Musikstück hochladen</li>
+                  <li>✗ Auch nicht auszugsweise, wenn die Auszüge zusammen das Werk «weitgehend» abbilden</li>
+                  <li>→ Gilt für <strong>alle KI-Modell-Typen</strong> – auch bei GKIoW</li>
                 </ul>
               </div>
             </div>
           </section>
 
-          {/* 4. Bewertung nach KI-Modell-Typ */}
+          {/* 4. Die drei KI-Modell-Typen */}
           <section className="mb-6 print:mb-3 print:break-before-page">
             <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
-              4. Urheberrechtliche Bewertung nach KI-Modell-Typ
+              4. Die drei KI-Modell-Typen und ihre urheberrechtliche Bewertung
             </h2>
-            <table className="w-full text-sm border-collapse print:text-[10px]">
-              <thead>
-                <tr className="bg-blue-100">
-                  <th className="text-left p-2 border border-blue-200 font-bold print:p-1">Handlung</th>
-                  <th className="text-left p-2 border border-blue-200 font-bold text-red-700 print:p-1">OKI</th>
-                  <th className="text-left p-2 border border-blue-200 font-bold text-amber-700 print:p-1">GKImW</th>
-                  <th className="text-left p-2 border border-blue-200 font-bold text-emerald-700 print:p-1">GKIoW</th>
-                </tr>
-              </thead>
-              <tbody className="text-slate-600">
-                <tr>
-                  <td className="p-2 border border-slate-200 font-semibold print:p-1">Hochladen (Vervielfältigung)</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Nicht zulässig</td>
-                  <td className="p-2 border border-slate-200 text-amber-600 print:p-1">⚠ Eigengebrauch möglich</td>
-                  <td className="p-2 border border-slate-200 text-emerald-600 print:p-1">✓ Zulässig</td>
-                </tr>
-                <tr className="bg-slate-50">
-                  <td className="p-2 border border-slate-200 font-semibold print:p-1">Bearbeitung (z.B. Zusammenfassung)</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Zustimmung nötig</td>
-                  <td className="p-2 border border-slate-200 text-amber-600 print:p-1">⚠ Nur bei LP-Kontrolle</td>
-                  <td className="p-2 border border-slate-200 text-emerald-600 print:p-1">✓ Bei LP-Kontrolle</td>
-                </tr>
-                <tr>
-                  <td className="p-2 border border-slate-200 font-semibold print:p-1">Freie Benutzung (z.B. Fragen erstellen)</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Nicht zulässig (wg. Hochladen)</td>
-                  <td className="p-2 border border-slate-200 text-emerald-600 print:p-1">✓ Zulässig</td>
-                  <td className="p-2 border border-slate-200 text-emerald-600 print:p-1">✓ Zulässig</td>
-                </tr>
-                <tr className="bg-slate-50">
-                  <td className="p-2 border border-slate-200 font-semibold print:p-1">Vollständiges Werkexemplar</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Nie</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Gegenausnahme greift</td>
-                  <td className="p-2 border border-slate-200 text-red-600 print:p-1">✗ Gegenausnahme greift</td>
-                </tr>
-              </tbody>
-            </table>
+
+            {/* OKI */}
+            <div className="mb-3 p-4 border-l-4 border-red-500 bg-red-50 rounded-r-lg print:p-2 print:mb-2 print:rounded-none">
+              <h3 className="text-sm font-bold text-red-700 mb-1 print:text-[11px]">
+                OKI – Offene KI-Modelle
+              </h3>
+              <p className="text-xs text-red-600 italic mb-2 print:text-[10px] print:mb-1">
+                z.B. ChatGPT Free, Gemini Free – Daten werden für Training/eigene Zwecke des Anbieters genutzt, kein Kontrollverlust ausschliessbar
+              </p>
+              <ul className="text-sm text-red-700 space-y-1 print:text-[10px] print:space-y-0">
+                <li>✗ <strong>Hochladen geschützter Werke nicht zulässig</strong> – Vervielfältigung fällt nicht unter Eigengebrauch, da Daten an Dritte (Anbieter) weitergegeben und potenziell für Training verwendet werden</li>
+                <li>✗ <strong>Keine Bearbeitung/Änderung</strong> geschützter Werke möglich</li>
+                <li>✗ <strong>Keine freie Benutzung</strong> – schon das Hochladen ist die Hürde</li>
+                <li>✗ Vollständige Werkexemplare <strong>unter keinen Umständen</strong></li>
+                <li>→ <strong>Strategie:</strong> Nur eigene Inhalte, gemeinfreie Werke oder CC-lizenzierte Materialien verwenden</li>
+              </ul>
+            </div>
+
+            {/* GKImW */}
+            <div className="mb-3 p-4 border-l-4 border-amber-500 bg-amber-50 rounded-r-lg print:p-2 print:mb-2 print:rounded-none">
+              <h3 className="text-sm font-bold text-amber-700 mb-1 print:text-[11px]">
+                GKImW – Geschlossene KI mit Weitergabe
+              </h3>
+              <p className="text-xs text-amber-600 italic mb-2 print:text-[10px] print:mb-1">
+                z.B. ChatGPT Enterprise/Edu, Azure OpenAI – Daten werden nicht für Training genutzt, aber an externen Anbieter übermittelt
+              </p>
+              <ul className="text-sm text-amber-700 space-y-1 print:text-[10px] print:space-y-0">
+                <li>⚠ <strong>Hochladen (Vervielfältigung)</strong> – im Eigengebrauch grundsätzlich möglich, aber: betriebsinterner Gebrauch erlaubt <strong>keine Bearbeitung</strong></li>
+                <li>⚠ <strong>Bearbeitung/Änderung</strong> – nur bei <strong>schulinternem Gebrauch</strong> (alleinige LP-Kontrolle), nicht bei betriebsinternem Gebrauch</li>
+                <li>✓ <strong>Freie Benutzung</strong> (z.B. Übungsfragen erstellen) – zulässig, wenn kein erkennbarer Zusammenhang zum Originalwerk</li>
+                <li>✗ Vollständige Werkexemplare – <strong>Gegenausnahme greift</strong></li>
+                <li>→ <strong>Achtung:</strong> Dritte (= KI-Anbieter) dürfen zwar vervielfältigen, aber <strong>keine Bearbeitungen</strong> vornehmen</li>
+              </ul>
+            </div>
+
+            {/* GKIoW */}
+            <div className="mb-3 p-4 border-l-4 border-emerald-500 bg-emerald-50 rounded-r-lg print:p-2 print:mb-2 print:rounded-none">
+              <h3 className="text-sm font-bold text-emerald-700 mb-1 print:text-[11px]">
+                GKIoW – Geschlossene KI ohne Weitergabe
+              </h3>
+              <p className="text-xs text-emerald-600 italic mb-2 print:text-[10px] print:mb-1">
+                z.B. lokal installierte Modelle, kantonale/schulinterne KI-Infrastruktur – Daten bleiben in der Schule
+              </p>
+              <ul className="text-sm text-emerald-700 space-y-1 print:text-[10px] print:space-y-0">
+                <li>✓ <strong>Hochladen (Vervielfältigung)</strong> – im Eigengebrauch zulässig (schulintern und betriebsintern)</li>
+                <li>✓ <strong>Bearbeitung/Änderung</strong> – bei alleiniger LP-Kontrolle (schulinterner Gebrauch) zulässig</li>
+                <li>✓ <strong>Freie Benutzung</strong> – zulässig</li>
+                <li>✗ Vollständige Werkexemplare – <strong>Gegenausnahme greift auch hier</strong></li>
+                <li>→ <strong>Sicherste Option</strong> für urheberrechtlich geschützte Materialien im schulischen Einsatz</li>
+              </ul>
+            </div>
           </section>
 
           {/* 5. Drei sichere Methoden */}
@@ -295,10 +326,74 @@ export default function UrheberrechtPage() {
             </div>
           </section>
 
-          {/* 6. Checkliste */}
+          {/* 6. Strategien & Alternativen */}
           <section className="mb-6 print:mb-3">
             <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
-              6. Checkliste vor dem Hochladen in eine KI
+              6. Strategien & Alternativen: Rechtsinhaber anfragen oder CC-Lizenzen nutzen
+            </h2>
+
+            <div className="p-3 bg-indigo-50 border border-indigo-200 rounded-lg mb-3 print:p-2 print:mb-2 print:rounded-none">
+              <p className="text-sm text-indigo-700 print:text-[10px]">
+                Wenn die Eigengebrauchsschranken <strong>nicht greifen</strong> (z.B. bei OKI, bei Bearbeitungen im betriebsinternen Gebrauch, oder
+                bei vollständigen Werkexemplaren), gibt es <strong>zwei zentrale Strategien</strong>, um geschützte Inhalte dennoch rechtssicher mit KI zu nutzen.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 print:gap-2">
+              {/* Strategie 1: Rechtsinhaber anfragen */}
+              <div className="p-4 border-2 border-violet-300 bg-violet-50 rounded-lg print:p-2 print:rounded-none">
+                <div className="flex items-center gap-2 mb-2 print:mb-1">
+                  <span className="w-7 h-7 rounded-full bg-violet-500 text-white text-sm font-bold flex items-center justify-center print:w-5 print:h-5 print:text-[10px]">A</span>
+                  <span className="text-sm font-bold text-violet-700 print:text-[11px]">Rechtsinhaber anfragen</span>
+                </div>
+                <p className="text-sm text-slate-600 mb-2 print:text-[10px] print:mb-1">
+                  Mit einer <strong>ausdrücklichen Zustimmung</strong> des Rechtsinhabers dürfen Sie jedes Werk in jede KI hochladen und bearbeiten lassen.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
+                  <li>• <strong>Verlage</strong> direkt kontaktieren (viele haben KI-Richtlinien)</li>
+                  <li>• <strong>ProLitteris</strong> (Texte, Bilder), <strong>SUISA</strong> (Musik), <strong>SSA</strong> (Bühnenstücke)</li>
+                  <li>• Schulbuchverlage haben teilweise Lizenzen für digitale Nutzung</li>
+                  <li>• Zustimmung <strong>schriftlich</strong> einholen und dokumentieren</li>
+                </ul>
+                <p className="text-xs text-violet-600 italic mt-2 print:text-[9px] print:mt-1">
+                  Tipp: Die Anfrage lohnt sich besonders bei Material, das regelmässig eingesetzt wird.
+                </p>
+              </div>
+
+              {/* Strategie 2: CC-Lizenzen */}
+              <div className="p-4 border-2 border-teal-300 bg-teal-50 rounded-lg print:p-2 print:rounded-none">
+                <div className="flex items-center gap-2 mb-2 print:mb-1">
+                  <span className="w-7 h-7 rounded-full bg-teal-500 text-white text-sm font-bold flex items-center justify-center print:w-5 print:h-5 print:text-[10px]">B</span>
+                  <span className="text-sm font-bold text-teal-700 print:text-[11px]">CC-lizenzierte Inhalte verwenden</span>
+                </div>
+                <p className="text-sm text-slate-600 mb-2 print:text-[10px] print:mb-1">
+                  <strong>Creative-Commons-Lizenzen</strong> erlauben im Voraus definierte Nutzungen. Materialien unter CC-Lizenzen können oft ohne weitere Anfrage mit KI genutzt werden.
+                </p>
+                <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
+                  <li>• <strong>CC0</strong> – Gemeinfrei, alles erlaubt</li>
+                  <li>• <strong>CC-BY</strong> – Frei nutzbar mit Quellenangabe</li>
+                  <li>• <strong>CC-BY-SA</strong> – Nutzbar, Weitergabe unter gleicher Lizenz</li>
+                  <li>⚠ <strong>CC-BY-ND</strong> – Keine Bearbeitungen erlaubt (KI-Zusammenfassung = Bearbeitung!)</li>
+                  <li>⚠ <strong>CC-BY-NC</strong> – Nur nicht-kommerziell (Schulgebrauch i.d.R. OK)</li>
+                </ul>
+                <p className="text-xs text-teal-600 italic mt-2 print:text-[9px] print:mt-1">
+                  Quellenangabe mit TASL-Formel: Titel – Autor – Source (URL) – Lizenz
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-3 p-3 bg-slate-100 border border-slate-200 rounded-lg print:p-2 print:mt-1.5 print:rounded-none">
+              <p className="text-sm text-slate-600 print:text-[10px]">
+                <strong>Quellen für CC-Material:</strong> Wikimedia Commons, Pixabay, Unsplash (eigene Lizenz), OER-Plattformen (Open Educational Resources),
+                SWISSUbase, ETH-Bibliothek. Prüfen Sie immer die spezifische Lizenz des konkreten Werks.
+              </p>
+            </div>
+          </section>
+
+          {/* 7. Checkliste */}
+          <section className="mb-6 print:mb-3">
+            <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
+              7. Checkliste vor dem Hochladen in eine KI
             </h2>
             <div className="space-y-2 print:space-y-1">
               {[
@@ -324,10 +419,10 @@ export default function UrheberrechtPage() {
             </div>
           </section>
 
-          {/* 7. KI-generierte Inhalte */}
+          {/* 8. KI-generierte Inhalte */}
           <section className="mb-6 print:mb-3">
             <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
-              7. Urheberrecht an KI-generierten Inhalten
+              8. Urheberrecht an KI-generierten Inhalten
             </h2>
             <div className="grid grid-cols-2 gap-4 print:gap-2">
               <div className="p-3 border border-slate-200 rounded-lg print:p-2 print:rounded-none">
@@ -354,10 +449,10 @@ export default function UrheberrechtPage() {
             </div>
           </section>
 
-          {/* 8. Vergütung */}
+          {/* 9. Hinweise */}
           <section className="mb-6 print:mb-3">
             <h2 className="text-lg font-bold text-slate-800 mb-3 print:text-sm print:mb-1.5 border-b-2 border-blue-500 pb-1">
-              8. Hinweise
+              9. Hinweise
             </h2>
             <div className="space-y-2 print:space-y-1">
               <div className="p-3 bg-slate-100 rounded-lg border border-slate-200 print:p-2 print:rounded-none">
