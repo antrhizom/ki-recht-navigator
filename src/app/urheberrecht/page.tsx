@@ -203,6 +203,36 @@ export default function UrheberrechtPage() {
                   <li>→ Gilt für <strong>alle KI-Modell-Typen</strong> – auch bei GKIoW</li>
                 </ul>
               </div>
+
+              {/* GT7 / Digitale Nutzung / Lehrmittelschranke */}
+              <div className="p-4 border-l-4 border-indigo-500 bg-indigo-50 rounded-r-lg print:p-2 print:rounded-none">
+                <h3 className="text-sm font-bold text-indigo-700 mb-1 print:text-[11px]">
+                  Digitale Nutzung im Schulnetz und die Lehrmittelschranke (GT 7 / Art. 19 Abs. 1 lit. b URG)
+                </h3>
+                <p className="text-xs text-indigo-600 italic mb-2 print:text-[10px] print:mb-1">
+                  Der Gemeinsame Tarif 7 (GT 7) regelt die Vergütung für schulische Vervielfältigungen und definiert, was im Unterricht erlaubt ist.
+                </p>
+                <div className="mb-2 p-2 bg-white rounded border border-indigo-200 print:p-1 print:mb-1">
+                  <p className="text-xs font-bold text-indigo-800 mb-1 print:text-[10px]">Was erlaubt ist:</p>
+                  <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
+                    <li>✓ Auszüge und Ausschnitte aus geschützten Werken dürfen im <strong>Schulnetz digital zur Verfügung</strong> gestellt werden (= Vervielfältigung im Eigengebrauch)</li>
+                    <li>✓ Da dies eine zulässige Vervielfältigung ist, können diese Auszüge auch in eine <strong>KI hochgeladen</strong> werden, um daraus Aufgaben, Übungen oder Zusammenfassungen zu erstellen</li>
+                    <li>✓ Die so erstellten Materialien dürfen in den <strong>eigenen Klassen</strong> der LP eingesetzt werden</li>
+                  </ul>
+                </div>
+                <div className="p-2 bg-white rounded border border-red-200 print:p-1">
+                  <p className="text-xs font-bold text-red-700 mb-1 print:text-[10px]">Die Grenze – Lehrmittelherstellung:</p>
+                  <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
+                    <li>✗ Sobald aus den KI-Ergebnissen <strong>Lehrmittel</strong> entstehen (z.B. ein Aufgabenset, ein Arbeitsheft, eine Übungssammlung), dürfen diese <strong>nicht über die eigenen Klassen hinaus</strong> verbreitet werden</li>
+                    <li>✗ Weitergabe an andere LP, andere Schulen, auf öffentliche Plattformen oder ins Internet ist <strong>nicht zulässig</strong> – auch nicht innerhalb der gleichen Schule</li>
+                    <li>✗ Die «eigene Klasse» ist die <strong>Eigengebrauch-Grenze</strong>: Was ich für meinen Unterricht erstelle, bleibt in meinem Unterricht</li>
+                  </ul>
+                </div>
+                <p className="text-xs text-indigo-600 mt-2 print:text-[9px] print:mt-1">
+                  <strong>Faustregel:</strong> Auszüge in KI hochladen und Aufgaben erstellen = erlaubt (eigene Klassen).
+                  Daraus ein Lehrmittel machen und weitergeben = nur mit Zustimmung des Rechtsinhabers.
+                </p>
+              </div>
             </div>
           </section>
 
