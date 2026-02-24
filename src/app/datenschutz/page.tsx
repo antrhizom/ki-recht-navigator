@@ -157,11 +157,36 @@ export default function DatenschutzPage() {
                 GKIoW – Geschlossene KI ohne Weitergabe
               </h3>
               <p className="text-xs text-emerald-600 italic mb-2 print:text-[10px] print:mb-1">
-                z.B. lokal installierte Modelle, kantonale/schulinterne KI-Infrastruktur, On-Premise-Lösungen
+                Daten werden nicht an Dritte weitergegeben und nicht für Training verwendet – es gibt zwei Varianten:
               </p>
+
+              {/* GKIoW-Lokal */}
+              <div className="ml-2 mb-2 p-2 bg-emerald-100/50 rounded border border-emerald-200 print:p-1 print:mb-1">
+                <p className="text-xs font-bold text-emerald-800 mb-1 print:text-[10px]">
+                  Variante 1: GKIoW-Lokal – auf eigenem Gerät oder eigener Infrastruktur
+                </p>
+                <p className="text-xs text-slate-600 print:text-[9px]">
+                  z.B. lokal installierte Modelle (LM Studio, Ollama), schulinterne Server, kantonale On-Premise-Lösungen.
+                  Daten verlassen das Gerät bzw. das Schulnetz <strong>nie</strong>.
+                </p>
+              </div>
+
+              {/* GKIoW-Cloud */}
+              <div className="ml-2 mb-2 p-2 bg-emerald-100/50 rounded border border-emerald-200 print:p-1 print:mb-1">
+                <p className="text-xs font-bold text-emerald-800 mb-1 print:text-[10px]">
+                  Variante 2: GKIoW-Cloud – registrierter Cloud-Dienst ohne Training und ohne dauerhafte Speicherung
+                </p>
+                <p className="text-xs text-slate-600 print:text-[9px]">
+                  z.B. ein KI-Dienst im Internet, bei dem man sich registriert, aber der Anbieter vertraglich zusichert:
+                  kein Training mit Eingabedaten, keine dauerhafte Speicherung der Prompts, eingeschränkter Zugriff.
+                  Vergleichbar mit einer <strong>Cloud wie Microsoft 365</strong>: Dokumente können temporär gespeichert werden,
+                  aber der Zugriff ist auf den registrierten Nutzer beschränkt – genau wie in einer Cloud, wo nur berechtigte
+                  Personen auf Dateien zugreifen können. Die Daten verbleiben in einer geschützten Umgebung.
+                </p>
+              </div>
+
               <ul className="text-sm text-emerald-700 space-y-1 print:text-[10px] print:space-y-0">
-                <li>✓ Personendaten grundsätzlich <strong>zulässig</strong></li>
-                <li>✓ Auch besonders schützenswerte Personendaten möglich</li>
+                <li>✓ Gewöhnliche Personendaten grundsätzlich <strong>zulässig</strong></li>
                 <li>✓ <strong>Sicherste Option</strong> für den schulischen Einsatz</li>
                 <li>⚠ Verhältnismässigkeitsprinzip weiterhin beachten</li>
               </ul>
@@ -250,12 +275,21 @@ export default function DatenschutzPage() {
                   bedürfen einer eingehenden Prüfung.
                 </p>
               </div>
+              <div className="p-3 bg-red-50 border border-red-200 rounded-lg print:p-2 print:rounded-none">
+                <p className="text-sm font-bold text-red-700 mb-1 print:text-[11px]">Besonders schützenswerte Personendaten gehören nicht in KI-Tools</p>
+                <p className="text-sm text-red-600 print:text-[10px]">
+                  Besonders schützenswerte Personendaten (Gesundheitsdaten, Lernschwächen, Disziplinarfälle, sensible
+                  Elternkorrespondenz) gehören <strong>in keine KI</strong> – auch nicht in GKIoW-Systeme auf dem eigenen Gerät.
+                  Solche Daten sind ausschliesslich in <strong>geschützten Verwaltungsumgebungen</strong> (z.B. kantonale
+                  Schulverwaltungssysteme, geschützte Fachapplikationen) zu bearbeiten und zu speichern,
+                  nicht auf individuellen Geräten von Lehrpersonen.
+                </p>
+              </div>
               <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg print:p-2 print:rounded-none">
                 <p className="text-sm font-bold text-amber-700 mb-1 print:text-[11px]">Amtsgeheimnis</p>
                 <p className="text-sm text-amber-600 print:text-[10px]">
-                  Die Eingabe vertraulicher Informationen (Disziplinarfälle, Gesundheitsdaten, sensible
-                  Elternkorrespondenz) in OKI oder GKImW kann das Amtsgeheimnis verletzen. Solche Inhalte
-                  gehören nur in GKIoW-Systeme.
+                  Die Eingabe vertraulicher Informationen in OKI oder GKImW kann das Amtsgeheimnis verletzen.
+                  Vertrauliche Inhalte gehören grundsätzlich nur in geschützte Verwaltungsumgebungen.
                 </p>
               </div>
               <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg print:p-2 print:rounded-none">

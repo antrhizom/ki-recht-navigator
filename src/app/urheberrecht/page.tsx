@@ -252,9 +252,37 @@ export default function UrheberrechtPage() {
                 GKIoW – Geschlossene KI ohne Weitergabe
               </h3>
               <p className="text-xs text-emerald-600 italic mb-2 print:text-[10px] print:mb-1">
-                z.B. lokal installierte Modelle, kantonale/schulinterne KI-Infrastruktur – sämtliche Daten verbleiben
-                innerhalb der Verwaltungseinheit, werden nicht an Dritte weitergegeben und nicht für Training verwendet
+                Daten werden nicht an Dritte weitergegeben und nicht für Training verwendet – es gibt zwei Varianten:
               </p>
+
+              {/* Variante 1: Lokal */}
+              <div className="ml-2 mb-2 p-2 bg-emerald-100/50 rounded border border-emerald-200 print:p-1 print:mb-1">
+                <p className="text-xs font-bold text-emerald-800 mb-1 print:text-[10px]">
+                  Variante 1: GKIoW-Lokal – auf eigenem Gerät oder eigener Infrastruktur
+                </p>
+                <p className="text-xs text-slate-600 print:text-[9px]">
+                  z.B. lokal installierte Modelle (LM Studio, Ollama), schulinterne Server, kantonale On-Premise-Lösungen.
+                  Daten verlassen das Gerät bzw. das Schulnetz <strong>nie</strong>. Urheberrechtlich die klarste Situation:
+                  es gibt keinen «Dritten», die Vervielfältigung bleibt vollständig beim Nutzer.
+                </p>
+              </div>
+
+              {/* Variante 2: Cloud */}
+              <div className="ml-2 mb-2 p-2 bg-emerald-100/50 rounded border border-emerald-200 print:p-1 print:mb-1">
+                <p className="text-xs font-bold text-emerald-800 mb-1 print:text-[10px]">
+                  Variante 2: GKIoW-Cloud – registrierter Cloud-Dienst ohne Training und ohne dauerhafte Speicherung
+                </p>
+                <p className="text-xs text-slate-600 print:text-[9px]">
+                  z.B. ein KI-Dienst im Internet, bei dem man sich registriert, aber der Anbieter vertraglich zusichert:
+                  kein Training mit Eingabedaten, keine dauerhafte Speicherung der Prompts, eingeschränkter Zugriff.
+                  Dies funktioniert <strong>wie eine Cloud (z.B. Microsoft 365)</strong>: In einer Cloud werden Dokumente
+                  gespeichert, aber nur berechtigte Personen können darauf zugreifen. Bei einer KI-Cloud ist es ähnlich –
+                  die Daten können vorübergehend verarbeitet werden, sind aber nicht öffentlich zugänglich und werden
+                  nicht weiterverwendet. Entscheidend ist, dass der Zugriff <strong>eingeschränkt</strong> bleibt und die
+                  Daten nicht für fremde Zwecke genutzt werden.
+                </p>
+              </div>
+
               <ul className="text-sm text-emerald-700 space-y-1 print:text-[10px] print:space-y-0">
                 <li>✓ <strong>Hochladen (Vervielfältigung)</strong> – im Eigengebrauch zulässig (schulintern und betriebsintern)</li>
                 <li>✓ <strong>Bearbeitung/Änderung</strong> – bei alleiniger LP-Kontrolle (schulinterner Gebrauch) zulässig</li>
@@ -264,24 +292,27 @@ export default function UrheberrechtPage() {
               </ul>
 
               <div className="mt-3 p-3 bg-white rounded-lg border border-emerald-200 print:p-2 print:mt-1.5">
-                <h4 className="text-xs font-bold text-emerald-800 mb-1.5 print:text-[10px] print:mb-1">Warum GKIoW urheberrechtlich vergleichbar mit einem Cloudspeicher ist</h4>
+                <h4 className="text-xs font-bold text-emerald-800 mb-1.5 print:text-[10px] print:mb-1">Vergleich mit Cloud-Speicher und die Frage der Speicherung</h4>
                 <p className="text-xs text-slate-600 mb-2 print:text-[9px] print:mb-1">
-                  Bei GKIoW werden Eingabedaten <strong>weder für Trainingszwecke genutzt noch dauerhaft gespeichert</strong>.
-                  Die Daten werden nur für die Verarbeitung des konkreten Prompts verwendet und danach verworfen.
-                  Dies ist urheberrechtlich vergleichbar mit einem <strong>schulinternen Cloudspeicher</strong> (z.B. kantonaler Server):
-                  Die Vervielfältigung dient ausschliesslich dem Eigengebrauch, es erfolgt keine Bekanntgabe an Dritte.
+                  In einer <strong>Cloud wie Microsoft 365</strong> werden Dokumente gespeichert – aber der Zugriff ist auf
+                  berechtigte Personen beschränkt. Microsoft nutzt die Dokumente nicht für eigene Zwecke. Bei einer
+                  <strong> KI-Cloud (GKIoW-Cloud)</strong> ist es vergleichbar: Die Eingabedaten können während der Verarbeitung
+                  vorübergehend gespeichert sein, aber der Anbieter nutzt sie nicht für Training und gibt sie nicht weiter.
+                  Der Zugriff ist auf den registrierten Nutzer beschränkt – wie bei einer Datei in OneDrive oder SharePoint.
                 </p>
                 <p className="text-xs text-slate-600 mb-2 print:text-[9px] print:mb-1">
                   <strong>Unterschied zu OKI/GKImW:</strong> Bei offenen Modellen und geschlossenen Modellen mit Weitergabe
-                  werden die Daten an externe Anbieter übermittelt. Selbst wenn ein Anbieter verspricht, die Daten
-                  «nicht für Training zu verwenden», liegt urheberrechtlich bereits in der <strong>Übermittlung an den Dritten</strong> eine
-                  relevante Handlung. Werden Daten beim Anbieter gespeichert (auch ohne Trainingsnutzung), bleibt eine
-                  <strong> Vervielfältigung im Sinne von Art. 10 URG</strong> bestehen, die nicht unter Art. 24a URG (vorübergehende
-                  Vervielfältigung) fällt – denn diese Ausnahme verlangt, dass die Kopie <strong>flüchtig oder begleitend</strong> ist
-                  und <strong>keine eigenständige wirtschaftliche Bedeutung</strong> hat (vgl. Vischer, 2024).
+                  werden die Daten an externe Anbieter übermittelt, die sie potenziell für eigene Zwecke nutzen.
+                  Selbst wenn ein Anbieter verspricht, die Daten «nicht für Training zu verwenden», aber sie dennoch
+                  <strong> dauerhaft speichert</strong>, bleibt eine <strong>Vervielfältigung im Sinne von Art. 10 URG</strong> bestehen.
+                  Diese fällt nicht unter Art. 24a URG (vorübergehende Vervielfältigung), denn diese Ausnahme verlangt,
+                  dass die Kopie <strong>flüchtig oder begleitend</strong> ist und <strong>keine eigenständige wirtschaftliche
+                  Bedeutung</strong> hat (vgl. Vischer, 2024). Wer Daten speichert und den Zugriff nicht einschränkt,
+                  erfüllt diese Bedingungen nicht.
                 </p>
                 <p className="text-xs text-emerald-700 font-semibold print:text-[9px]">
-                  → GKIoW vermeidet dieses Problem vollständig: keine Übermittlung, keine externe Speicherung, keine Drittnutzung.
+                  → GKIoW (beide Varianten) vermeidet dieses Problem: keine Weitergabe an Dritte, kein Training,
+                  und bei vorübergehender Speicherung ist der Zugriff strikt eingeschränkt – wie bei einem Cloud-Speicher.
                 </p>
               </div>
             </div>
