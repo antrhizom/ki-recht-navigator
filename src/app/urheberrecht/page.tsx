@@ -210,14 +210,24 @@ export default function UrheberrechtPage() {
                   Digitale Nutzung im Schulnetz und die Lehrmittelschranke (GT 7 / Art. 19 Abs. 1 lit. b URG)
                 </h3>
                 <p className="text-xs text-indigo-600 italic mb-2 print:text-[10px] print:mb-1">
-                  Der Gemeinsame Tarif 7 (GT 7) regelt die Vergütung für schulische Vervielfältigungen und definiert, was im Unterricht erlaubt ist.
+                  Der Gemeinsame Tarif 7 (GT 7, gültig 2022–2026) regelt die Vergütung für schulische Vervielfältigungen und definiert, was im Unterricht erlaubt ist.
                 </p>
                 <div className="mb-2 p-2 bg-white rounded border border-indigo-200 print:p-1 print:mb-1">
-                  <p className="text-xs font-bold text-indigo-800 mb-1 print:text-[10px]">Was erlaubt ist:</p>
+                  <p className="text-xs font-bold text-indigo-800 mb-1 print:text-[10px]">Was erlaubt ist – Texte und Bilder (Auszüge):</p>
                   <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
                     <li>✓ Auszüge und Ausschnitte aus geschützten Werken dürfen im <strong>Schulnetz digital zur Verfügung</strong> gestellt werden (= Vervielfältigung im Eigengebrauch)</li>
                     <li>✓ Da dies eine zulässige Vervielfältigung ist, können diese Auszüge auch in eine <strong>KI hochgeladen</strong> werden, um daraus Aufgaben, Übungen oder Zusammenfassungen zu erstellen</li>
                     <li>✓ Die so erstellten Materialien dürfen in den <strong>eigenen Klassen</strong> der LP eingesetzt werden</li>
+                  </ul>
+                </div>
+                <div className="mb-2 p-2 bg-white rounded border border-indigo-200 print:p-1 print:mb-1">
+                  <p className="text-xs font-bold text-indigo-800 mb-1 print:text-[10px]">Sonderfall – TV- und Radio-Aufnahmen (ganze Sendungen):</p>
+                  <ul className="text-sm text-slate-600 space-y-1 print:text-[10px] print:space-y-0">
+                    <li>✓ Der GT 7 erlaubt Schulen, <strong>ganze Radio- und TV-Sendungen</strong> für den schulischen Unterricht aufzuzeichnen und intern zugänglich zu machen</li>
+                    <li>✓ Die Aufnahme kann direkt oder über <strong>Dienste Dritter</strong> erfolgen (z.B. nanoo.tv, schulinterne Plattformen)</li>
+                    <li>✓ Da es sich um eine <strong>zulässige Vervielfältigung</strong> handelt, können diese Aufnahmen ebenfalls in eine <strong>KI hochgeladen</strong> werden – z.B. um Aufgaben, Transkripte oder Unterrichtsmaterial daraus zu erstellen</li>
+                    <li>⚠ <strong>Nur ab Radio/TV</strong> als Quelle – nicht ab DVDs, Blu-rays, CDs oder Streaming-Diensten</li>
+                    <li>⚠ Die Nutzung ist an den <strong>schulischen Unterrichtszweck</strong> gebunden</li>
                   </ul>
                 </div>
                 <div className="p-2 bg-white rounded border border-red-200 print:p-1">
@@ -226,11 +236,16 @@ export default function UrheberrechtPage() {
                     <li>✗ Sobald aus den KI-Ergebnissen <strong>Lehrmittel</strong> entstehen (z.B. ein Aufgabenset, ein Arbeitsheft, eine Übungssammlung), dürfen diese <strong>nicht über die eigenen Klassen hinaus</strong> verbreitet werden</li>
                     <li>✗ Weitergabe an andere LP, andere Schulen, auf öffentliche Plattformen oder ins Internet ist <strong>nicht zulässig</strong> – auch nicht innerhalb der gleichen Schule</li>
                     <li>✗ Die «eigene Klasse» ist die <strong>Eigengebrauch-Grenze</strong>: Was ich für meinen Unterricht erstelle, bleibt in meinem Unterricht</li>
+                    <li>✗ Dies gilt sowohl für Material aus <strong>Textauszügen</strong> als auch aus <strong>TV/Radio-Aufnahmen</strong></li>
                   </ul>
                 </div>
                 <p className="text-xs text-indigo-600 mt-2 print:text-[9px] print:mt-1">
-                  <strong>Faustregel:</strong> Auszüge in KI hochladen und Aufgaben erstellen = erlaubt (eigene Klassen).
+                  <strong>Faustregel:</strong> Auszüge und TV/Radio-Aufnahmen in KI hochladen und Aufgaben erstellen = erlaubt (eigene Klassen).
                   Daraus ein Lehrmittel machen und weitergeben = nur mit Zustimmung des Rechtsinhabers.
+                </p>
+                <p className="text-xs text-indigo-500 mt-1 print:text-[9px] print:mt-0.5">
+                  <strong>Hinweis:</strong> Der GT 7 in der aktuellen Fassung gilt bis Ende 2026. Danach ist mit einer Neufassung zu rechnen.
+                  Vgl. <em>Merkblatt Schulen GT 7 (2022)</em> der Verwertungsgesellschaften.
                 </p>
               </div>
             </div>
