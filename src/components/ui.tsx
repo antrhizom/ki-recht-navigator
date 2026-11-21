@@ -8,36 +8,29 @@ export const LINIE = "#e2e5e9";
 export const GEDAEMPFT = "#5c6168";
 export const FLAECHE = "#f4f6f8";
 
-export const EINSTIEG_STIL: Record<Einstieg, { bg: string; fg: string }> = {
-  ja: { bg: "#e5f5ec", fg: "#1a7f4b" },
-  moeglich: { bg: "#fbf2e1", fg: "#8a5a00" },
-  nein: { bg: "#fdecea", fg: "#b3261e" },
-  lesen: { bg: "#f1f3f5", fg: "#4b5158" },
-};
+/** Marken und Filter zum Antwortanfang sind bewusst neutral gefärbt: Sie zitieren nur
+ *  die ersten Worte einer Antwort und sagen nichts über die rechtlichen Voraussetzungen. */
+export const MARKE = { bg: "#f1f3f5", fg: "#3a3e44" };
 
-/** Die vier Gruppen der Lesehilfe «Umsetzbarkeit». */
+/** Die vier Gruppen des Filters «Antwortanfang». */
 export const EINSTIEG_GRUPPEN: {
   gruppe: Einstieg;
   titel: string;
   beginnt: string;
 }[] = [
-  { gruppe: "ja", titel: "«Ja» / «Zulässig»", beginnt: "«Ja», «Zulässig» oder «Grundsätzlich ja»" },
-  { gruppe: "moeglich", titel: "«Möglich unter …»", beginnt: "«Möglich unter»" },
+  { gruppe: "ja", titel: "«Ja» / «Zulässig» …", beginnt: "«Ja», «Zulässig» oder «Grundsätzlich ja»" },
+  { gruppe: "moeglich", titel: "«Möglich unter» …", beginnt: "«Möglich unter»" },
   {
     gruppe: "nein",
-    titel: "«Nein» / «Nicht zulässig»",
+    titel: "«Nein» / «Nicht zulässig» …",
     beginnt: "«Nein», «Nicht zulässig» oder «Grundsätzlich nein»",
   },
-  {
-    gruppe: "lesen",
-    titel: "Differenziert – Wortlaut lesen",
-    beginnt: "anderen Worten – die Antwort ist differenziert",
-  },
+  { gruppe: "lesen", titel: "Anderer Anfang", beginnt: "anderen Worten" },
 ];
 
 export function einstiegText(info: EinstiegInfo): string {
-  if (info.gruppe === "lesen") return "differenziert";
-  return `«${info.wort}${info.gruppe === "moeglich" ? " …" : ""}»`;
+  if (info.gruppe === "lesen") return "anderer Anfang";
+  return `«${info.wort} …»`;
 }
 
 export function EinstiegChip({
@@ -49,14 +42,12 @@ export function EinstiegChip({
   vorsatz?: string;
   betont?: boolean;
 }) {
-  const stil = EINSTIEG_STIL[info.gruppe];
   return (
     <span
       className="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[13px]"
       style={{
-        backgroundColor: stil.bg,
-        color: stil.fg,
-        outline: betont ? `2px solid ${stil.fg}` : undefined,
+        backgroundColor: betont ? AKZENT_HELL : MARKE.bg,
+        color: betont ? AKZENT : MARKE.fg,
         fontWeight: betont ? 650 : 500,
       }}
     >

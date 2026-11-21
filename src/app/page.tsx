@@ -6,13 +6,13 @@ const AKTIVITAETEN = [
   {
     href: "/organisation",
     titel: "Den Aufbau verstehen",
-    text: "Wie die Usecases geordnet sind, was die drei Typen von KI-Tools bedeuten und wie die Marken zur Umsetzbarkeit zu lesen sind.",
+    text: "Wie die Usecases geordnet sind, was die drei Typen von KI-Tools bedeuten und wie die Marken zum Antwortanfang zu lesen sind.",
     register: "Register 2",
   },
   {
     href: "/fragen",
     titel: "Den eigenen Usecase finden",
-    text: "Typ des KI-Tools wählen, nach Umsetzbarkeit und Thema filtern oder nach einem Stichwort suchen.",
+    text: "Typ des KI-Tools wählen, nach Antwortanfang und Thema filtern oder nach einem Stichwort suchen.",
     register: "Register 3",
   },
   {
@@ -59,8 +59,8 @@ export default function Einstieg() {
       <Box etikett="1:1-Fassung der rechtlichen Abklärung" betont>
         <p>
           Alle Fragen und Antworten stehen im <strong>unveränderten Wortlaut</strong> des
-          Fragekatalogs Sek II, geprüft durch den Rechtsdienst MBA. Es wurde nichts gekürzt,
-          zusammengefasst oder umformuliert. Massgebend ist immer der ganze Wortlaut einer Antwort.
+          Fragekatalogs Sek II (Fassung FINAL) mit den Antworten der juristischen Abklärung. Es
+          wurde nichts gekürzt, zusammengefasst oder umformuliert. Massgebend ist immer der ganze Wortlaut einer Antwort.
         </p>
       </Box>
 

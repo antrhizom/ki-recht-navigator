@@ -62,7 +62,7 @@ export function istUmsetzungsfrage(frage: Frage): boolean {
 }
 
 /**
- * Lesehilfe «Umsetzbarkeit»: sortiert nach den ERSTEN WORTEN der Antwort bzw. der
+ * Filter «Antwortanfang»: sortiert nach den ERSTEN WORTEN der Antwort bzw. der
  * Modell-Zeile – rein mechanisch, ohne eigene rechtliche Einstufung. Alles, was nicht
  * wörtlich so beginnt, landet unter «lesen».
  */

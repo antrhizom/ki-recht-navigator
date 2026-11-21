@@ -43,7 +43,7 @@ export default function Impressum() {
           <p>
             Übernommen sind die Spalten «Praxisnahe Formulierung (LP)», «Juristische
             Formulierung», «Themenkategorie» und «Antwort» sowie die Legende zu
-            den Themenkategorien und den KI-Modell-Typen. Der Fragekatalog wurde durch den Rechtsdienst MBA geprüft.
+            den Themenkategorien und den KI-Modell-Typen. Die Antworten stammen aus einer juristischen Abklärung zum Fragekatalog.
           </p>
           <p>
             Der Wortlaut ist 1:1 übernommen: Es wurde nichts gekürzt, zusammengefasst, umformuliert
@@ -60,12 +60,12 @@ export default function Impressum() {
             ist.
           </p>
           <p>
-            <strong>Filter «Umsetzbarkeit»:</strong> Er gilt für die Fragen, deren praxisnahe
+            <strong>Filter «Antwortanfang»:</strong> Er gilt für die Fragen, deren praxisnahe
             Formulierung mit «Darf», «Dürfen» oder «Kann» beginnt. Ein Programm ordnet sie
             ausschliesslich nach den ersten Worten der Antwort: «Ja», «Zulässig» oder
             «Grundsätzlich ja»; «Möglich unter»; «Nein», «Nicht zulässig» oder «Grundsätzlich
             nein». Unterscheidet die Antwort nach OKI, GKImW und GKIoW, gelten die ersten Worte
-            der jeweiligen Zeile. Alles andere steht unter «Differenziert – Wortlaut lesen».
+            der jeweiligen Zeile. Alles andere steht unter «Anderer Anfang». Marken und Filter sind bewusst neutral gefärbt.
           </p>
           <p>
             Diese Ordnung ist eine Lesehilfe und keine eigene rechtliche Einstufung. Sie zitiert

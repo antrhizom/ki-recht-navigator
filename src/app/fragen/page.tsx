@@ -20,7 +20,7 @@ import {
   AKZENT,
   AKZENT_HELL,
   EINSTIEG_GRUPPEN,
-  EINSTIEG_STIL,
+  MARKE,
   EinstiegChip,
   Etikett,
   FLAECHE,
@@ -103,6 +103,11 @@ function FrageKarte({
             {frage.praxisfrage}
           </h3>
           <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+            {u !== null && (
+              <span className="text-[13px]" style={{ color: GEDAEMPFT }}>
+                Antwortanfang:
+              </span>
+            )}
             {u === null && (
               <span
                 className="rounded-full px-2.5 py-0.5 text-[13px]"
@@ -115,7 +120,12 @@ function FrageKarte({
               MODELLTYPEN.map((m) => (
                 <EinstiegChip key={m} info={u.proModell[m]} vorsatz={m} betont={m === modell} />
               ))}
-            {u?.art === "gesamt" && <EinstiegChip info={u.gesamt} vorsatz="Antwort" />}
+            {u?.art === "gesamt" && <EinstiegChip info={u.gesamt} />}
+            {u?.art === "gesamt" && modell !== null && (
+              <span className="text-[13px]" style={{ color: GEDAEMPFT }}>
+                (nicht nach Typ unterschieden)
+              </span>
+            )}
           </div>
         </div>
         <span className="mt-1 flex-shrink-0" style={{ color: GEDAEMPFT }}>
@@ -308,7 +318,7 @@ export default function FragenFiltern() {
       <div className="mt-4 rounded-[10px] border p-4 sm:p-5" style={{ borderColor: LINIE }}>
         <FilterZeile
           titel="Typ Ihres KI-Tools"
-          hilfe="Hebt in jeder Antwort die passende Zeile hervor und gilt für den Filter «Umsetzbarkeit»."
+          hilfe="Hebt in jeder Antwort die passende Zeile hervor und gilt für den Filter «Antwortanfang»."
         >
           {MODELLTYPEN.map((m) => (
             <Wahlknopf key={m} aktiv={modell === m} onClick={() => setModell(modell === m ? null : m)}>
@@ -318,18 +328,20 @@ export default function FragenFiltern() {
         </FilterZeile>
 
         <FilterZeile
-          titel="Umsetzbarkeit"
+          titel="Antwortanfang"
           hilfe={
             <>
-              Ordnet die {anzahlUmsetzung} Fragen zur Umsetzung nach den ersten Worten der Antwort –
-              eine Lesehilfe, keine eigene Einstufung.
-              {modell === null && " Ohne Tool-Typ zählt jede der drei Zeilen."}
+              Ordnet die {anzahlUmsetzung} Fragen zur Umsetzung nur nach den ersten Worten der
+              Antwort. Das ist keine Aussage darüber, ob ein Usecase erlaubt ist: Bedingungen,
+              Ausnahmen und Einschränkungen stehen erst im Wortlaut.
+              {modell === null
+                ? " Ohne gewählten Tool-Typ zählt jede der drei Zeilen."
+                : " Antworten ohne eigene Zeile pro Typ erscheinen unabhängig vom gewählten Typ."}
             </>
           }
         >
           {EINSTIEG_GRUPPEN.map(({ gruppe, titel }) => {
             const aktiv = einstiege.includes(gruppe);
-            const stil = EINSTIEG_STIL[gruppe];
             return (
               <button
                 key={gruppe}
@@ -337,9 +349,9 @@ export default function FragenFiltern() {
                 aria-pressed={aktiv}
                 className="cursor-pointer rounded-full border px-3 py-1 text-[14.5px]"
                 style={{
-                  backgroundColor: aktiv ? stil.fg : stil.bg,
-                  borderColor: aktiv ? stil.fg : "transparent",
-                  color: aktiv ? "#fff" : stil.fg,
+                  backgroundColor: aktiv ? AKZENT : MARKE.bg,
+                  borderColor: aktiv ? AKZENT : "transparent",
+                  color: aktiv ? "#fff" : MARKE.fg,
                   fontWeight: aktiv ? 600 : 500,
                 }}
               >

@@ -23,8 +23,8 @@ export default function RootLayout({
         <footer className="mx-auto max-w-[860px] px-4 pb-10">
           <div className="border-t border-[#e2e5e9] pt-6 text-[14px] leading-[1.6] text-[#5c6168]">
             <p>
-              Herausgeber: DLH Digital Learning Hub. Quelle: Fragekatalog Sek II (FINAL), geprüft
-              durch den Rechtsdienst MBA. Stand: {datumLang(ABGEGLICHEN_AM)}.
+              Herausgeber: DLH Digital Learning Hub. Quelle: Fragekatalog Sek II (FINAL) mit den
+              Antworten der juristischen Abklärung. Stand: {datumLang(ABGEGLICHEN_AM)}.
             </p>
             <p className="mt-1">
               Diese Informationen stellen keine Rechtsberatung dar.{" "}

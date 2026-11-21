@@ -11,7 +11,7 @@ import {
 import {
   Abschnitt,
   EINSTIEG_GRUPPEN,
-  EINSTIEG_STIL,
+  MARKE,
   EinstiegChip,
   Etikett,
   FLAECHE,
@@ -131,8 +131,11 @@ export default function Organisation() {
           })}
         </div>
         <p className="text-[15.5px]" style={{ color: GEDAEMPFT }}>
-          Welchem Typ ein bestimmtes Tool angehört, beantwortet der Fragekatalog nicht. Das hängt
-          von den Verträgen und Einstellungen des Tools ab.
+          Welchem Typ ein bestimmtes Tool angehört, beantwortet der Fragekatalog nicht. Massgebend
+          sind die Beschreibungen oben: was mit den Eingaben und weiteren Daten tatsächlich
+          geschieht – wer sie bearbeitet, wo sie gespeichert werden, wer darauf zugreifen kann und
+          ob sie für eigene Zwecke genutzt werden. Bei GKIoW müssen sämtliche Daten innerhalb der
+          Verwaltung bleiben.
         </p>
       </Abschnitt>
 
@@ -155,21 +158,20 @@ export default function Organisation() {
         </div>
       </Abschnitt>
 
-      <Abschnitt id="marken" titel="Marken zur Umsetzbarkeit lesen">
+      <Abschnitt id="marken" titel="Marken zum Antwortanfang lesen">
         <p>
-          Unter jeder Frage zur Umsetzung zeigt die Seite kleine Marken. Sie{" "}
+          Unter jeder Frage zur Umsetzung zeigt die Seite graue Marken. Sie{" "}
           <strong>zitieren nur die ersten Worte der Antwort</strong> – bei Antworten mit einer
-          Zeile pro Typ die ersten Worte jeder Zeile. Sie sind eine Lesehilfe und keine eigene
-          rechtliche Einstufung.
+          Zeile pro Typ die ersten Worte jeder Zeile. Sie prüfen keine rechtlichen Voraussetzungen
+          und sind weder eine Freigabe noch ein Verbot.
         </p>
         <ul className="grid gap-1.5">
           {EINSTIEG_GRUPPEN.map((g) => {
-            const stil = EINSTIEG_STIL[g.gruppe];
             return (
               <li key={g.gruppe} className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <span
                   className="rounded-full px-2.5 py-0.5 text-[14px] font-medium"
-                  style={{ backgroundColor: stil.bg, color: stil.fg }}
+                  style={{ backgroundColor: MARKE.bg, color: MARKE.fg }}
                 >
                   {g.titel}
                 </span>
@@ -192,16 +194,19 @@ export default function Organisation() {
             </div>
             <p className="mt-2.5 text-[15px]" style={{ color: GEDAEMPFT }}>
               Die Antwort hat eine Zeile pro Typ. Die Zeile zu GKImW beginnt mit «Möglich unter»
-              und nennt danach die Bedingungen. Die Marke zeigt nur diesen Anfang – die
-              Bedingungen stehen im Wortlaut.
+              und nennt danach die Bedingungen. Die Antwort zu Frage 32 verlangt für GKImW
+              vergleichbare Bedingungen, beginnt aber mit «Ja». Gleiche Voraussetzungen können also
+              hinter unterschiedlichen Anfängen stehen.
             </p>
           </div>
         )}
 
         <p className="rounded-[10px] p-3.5 text-[15.5px]" style={{ backgroundColor: FLAECHE }}>
           <strong>Wichtig:</strong> Auch ein «Ja» ist oft an Bedingungen geknüpft, etwa an die
-          Verhältnismässigkeit oder an eine vollständige Anonymisierung. Lesen Sie vor dem Einsatz
-          immer die ganze Antwort.
+          Verhältnismässigkeit oder an eine vollständige Anonymisierung. Ein «Nein» kann im
+          weiteren Text Ausnahmen nennen oder nur für bestimmte Daten gelten. Antworten ohne
+          eigene Zeile pro Typ gelten nicht speziell für einen Typ und betreffen teils nur einen
+          Teilaspekt, etwa den Serverstandort. Lesen Sie vor dem Einsatz immer die ganze Antwort.
         </p>
       </Abschnitt>
 
