@@ -42,6 +42,10 @@ export default function Impressum() {
           Zurück zu den Fragen
         </Link>
 
+        <Abschnitt titel="Herausgeber">
+          <p>DLH Digital Learning Hub</p>
+        </Abschnitt>
+
         <Abschnitt titel="Stand">
           <p>
             Letzte Aktualisierung: <strong>{stand}</strong>. An diesem Tag wurden alle{" "}
@@ -59,11 +63,13 @@ export default function Impressum() {
           <p>
             Übernommen sind die Spalten «Praxisnahe Formulierung (LP)», «Juristische
             Formulierung», «Themenkategorie» und «{QUELLE.spalteAntwort}» sowie die Legende zu
-            den Themenkategorien und den KI-Modell-Typen. Die Antworten stammen von valfor.
+            den Themenkategorien und den KI-Modell-Typen. Die Antworten stammen von valfor. Der
+            Fragekatalog wurde durch den Rechtsdienst MBA geprüft.
           </p>
           <p>
-            Der Wortlaut ist unverändert: Es wurde nichts gekürzt, zusammengefasst, umformuliert
-            oder korrigiert. Auch Schreibweisen und Tippfehler entsprechen dem Katalog.
+            Der Wortlaut ist 1:1 übernommen: Es wurde nichts gekürzt, zusammengefasst, umformuliert
+            oder korrigiert. Auch Schreibweisen und Tippfehler entsprechen dem Katalog. Die Fragen
+            und Antworten auf dieser Seite sind deshalb keine eigene Zusammenfassung.
           </p>
         </Abschnitt>
 

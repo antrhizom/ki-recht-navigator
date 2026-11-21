@@ -305,7 +305,8 @@ export default function Home() {
           <Quote className="w-4 h-4 text-indigo-500 mt-0.5 flex-shrink-0" />
           <p>
             Alle {fragen.length} Fragen und Antworten stehen hier im unveränderten Wortlaut des
-            Fragekatalogs Sek II – ohne Kürzungen, Zusammenfassungen oder eigene Einstufungen.
+            Fragekatalogs Sek II – ohne Kürzungen, Zusammenfassungen oder eigene Einstufungen. Der
+            Fragekatalog wurde vom Rechtsdienst MBA geprüft.
           </p>
         </div>
 
@@ -460,7 +461,8 @@ export default function Home() {
             Fragen zum KI-Einsatz an Schulen im Kanton Zürich
           </p>
           <p className="text-xs text-slate-500 mt-1">
-            Antworten von valfor | Diese Informationen stellen keine Rechtsberatung dar.
+            Herausgeber: DLH Digital Learning Hub | Antworten von valfor, geprüft durch den
+            Rechtsdienst MBA | Diese Informationen stellen keine Rechtsberatung dar.
           </p>
           <p className="text-xs text-slate-500 mt-1">
             Stand: {datumLang(ABGEGLICHEN_AM)} |{" "}
