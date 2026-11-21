@@ -275,25 +275,10 @@ export default function Home() {
               <div>
                 <h1 className="text-xl font-bold text-slate-800">KI-Recht Navigator</h1>
                 <p className="text-xs text-slate-500">
-                  Rechtliche Fragen zum KI-Einsatz an Schulen | Kanton Zürich
+                  DLH Digital Learning Hub | Rechtliche Fragen zum KI-Einsatz an Schulen | Kanton
+                  Zürich
                 </p>
               </div>
-            </div>
-            <div className="hidden sm:flex items-center gap-3">
-              <Link
-                href="/datenschutz"
-                className="flex items-center gap-1.5 text-xs font-medium text-emerald-600 hover:text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100"
-              >
-                <Shield className="w-3.5 h-3.5" />
-                Datenschutz-Info
-              </Link>
-              <Link
-                href="/urheberrecht"
-                className="flex items-center gap-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200 hover:bg-blue-100"
-              >
-                <FileText className="w-3.5 h-3.5" />
-                Urheberrecht-Info
-              </Link>
             </div>
           </div>
         </div>
@@ -303,9 +288,10 @@ export default function Home() {
         <div className="flex items-start gap-2 p-3 mb-4 bg-white rounded-xl border border-slate-200 text-sm text-slate-700">
           <Quote className="w-4 h-4 text-indigo-500 mt-0.5 flex-shrink-0" />
           <p>
-            Alle {fragen.length} Fragen und Antworten stehen hier im unveränderten Wortlaut des
-            Fragekatalogs Sek II – ohne Kürzungen, Zusammenfassungen oder eigene Einstufungen. Der
-            Fragekatalog wurde vom Rechtsdienst MBA geprüft.
+            Der DLH Digital Learning Hub stellt hier die vom Rechtsdienst MBA geprüften Usecases
+            zum KI-Einsatz an Schulen so einfach wie möglich dar. Alle {fragen.length} Fragen und
+            Antworten stehen im unveränderten Wortlaut des Fragekatalogs Sek II – ohne Kürzungen,
+            Zusammenfassungen oder eigene Einstufungen.
           </p>
         </div>
 
@@ -423,7 +409,11 @@ export default function Home() {
           </div>
         )}
 
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <h2 className="mt-10 mb-1 text-sm font-semibold text-slate-700">Ergänzend</h2>
+        <p className="mb-3 text-xs text-slate-500">
+          Zwei ausdruckbare Merkblätter. Sie sind nicht Teil des geprüften Fragekatalogs.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <Link
             href="/datenschutz"
             className="flex items-center gap-3 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-200 hover:shadow-md hover:border-emerald-300"
