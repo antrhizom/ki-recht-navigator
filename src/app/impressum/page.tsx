@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Scale } from "lucide-react";
-import { fragen, QUELLE, ABGEGLICHEN_AM, datumLang } from "@/data/questions";
+import { fragen, ABGEGLICHEN_AM, datumLang } from "@/data/questions";
 
 export const metadata: Metadata = {
   title: "Impressum und Entstehung | KI-Recht Navigator",
@@ -62,9 +62,8 @@ export default function Impressum() {
           </p>
           <p>
             Übernommen sind die Spalten «Praxisnahe Formulierung (LP)», «Juristische
-            Formulierung», «Themenkategorie» und «{QUELLE.spalteAntwort}» sowie die Legende zu
-            den Themenkategorien und den KI-Modell-Typen. Die Antworten stammen von valfor. Der
-            Fragekatalog wurde durch den Rechtsdienst MBA geprüft.
+            Formulierung», «Themenkategorie» und «Antwort» sowie die Legende zu
+            den Themenkategorien und den KI-Modell-Typen. Der Fragekatalog wurde durch den Rechtsdienst MBA geprüft.
           </p>
           <p>
             Der Wortlaut ist 1:1 übernommen: Es wurde nichts gekürzt, zusammengefasst, umformuliert

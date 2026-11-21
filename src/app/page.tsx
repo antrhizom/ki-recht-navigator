@@ -22,7 +22,6 @@ import {
   fragen,
   THEMENKATEGORIEN,
   MODELLE,
-  QUELLE,
   ABGEGLICHEN_AM,
   datumLang,
   KATEGORIE_FARBEN,
@@ -457,12 +456,12 @@ export default function Home() {
 
         <footer className="mt-8 py-8 border-t border-slate-200 text-center">
           <p className="text-xs text-slate-500">
-            Quelle: Fragekatalog Sek II (FINAL), Spalte «{QUELLE.spalteAntwort}» | Rechtliche
+            Quelle: Fragekatalog Sek II (FINAL) | Rechtliche
             Fragen zum KI-Einsatz an Schulen im Kanton Zürich
           </p>
           <p className="text-xs text-slate-500 mt-1">
-            Herausgeber: DLH Digital Learning Hub | Antworten von valfor, geprüft durch den
-            Rechtsdienst MBA | Diese Informationen stellen keine Rechtsberatung dar.
+            Herausgeber: DLH Digital Learning Hub | Fragekatalog geprüft durch den Rechtsdienst
+            MBA | Diese Informationen stellen keine Rechtsberatung dar.
           </p>
           <p className="text-xs text-slate-500 mt-1">
             Stand: {datumLang(ABGEGLICHEN_AM)} |{" "}

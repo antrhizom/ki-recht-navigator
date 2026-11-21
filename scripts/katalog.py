@@ -9,7 +9,8 @@ Tippfehlern).
     python scripts/katalog.py --check    # Abgleich; bricht bei Abweichung ab
 
 Uebernommen werden nur die Spalten A-E (Nr., Praxisnahe Formulierung,
-Juristische Formulierung, Themenkategorie, Antwort) sowie die Legende
+Juristische Formulierung, Themenkategorie, Antwort)
+(Namen von Personen werden nicht veroeffentlicht.) sowie die Legende
 (Themenkategorien und KI-Modell-Typen). Die Spalten F-I enthalten interne
 Notizen und werden bewusst nicht veroeffentlicht.
 """
@@ -32,7 +33,7 @@ ERWARTETE_KOPFZEILE = {
     "B": "Praxisnahe Formulierung (LP)",
     "C": "Juristische Formulierung",
     "D": "Themenkategorie",
-    "E": "Antwort valfor",
+    "E": "Antwort",  # Spaltenkopf beginnt mit «Antwort»; Rest wird nicht veroeffentlicht
 }
 ANZAHL_FRAGEN = 71
 
@@ -57,7 +58,8 @@ def lies_excel(pfad: Path) -> dict:
         raise SystemExit("Kopfzeile mit 'Nr.' nicht gefunden")
     for spalte, erwartet in ERWARTETE_KOPFZEILE.items():
         gefunden = ws[f"{spalte}{kopf}"].value
-        if gefunden != erwartet:
+        passt = gefunden == erwartet or (spalte == "E" and isinstance(gefunden, str) and gefunden.startswith(erwartet))
+        if not passt:
             raise SystemExit(
                 f"Kopfzeile {spalte}{kopf}: erwartet {erwartet!r}, gefunden {gefunden!r}"
             )
@@ -111,7 +113,6 @@ def lies_excel(pfad: Path) -> dict:
         "quelle": {
             "datei": pfad.name,
             "sha256": hashlib.sha256(pfad.read_bytes()).hexdigest(),
-            "spalteAntwort": ERWARTETE_KOPFZEILE["E"],
         },
         "themenkategorien": kategorien,
         "modelle": modelle,

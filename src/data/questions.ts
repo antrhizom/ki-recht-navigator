@@ -14,7 +14,7 @@ export interface Frage {
   juristischeFormulierung: string | null;
   /** Spalte D «Themenkategorie»; im Excel bei Frage 14 leer */
   themenkategorie: string | null;
-  /** Spalte E «Antwort valfor», vollständig */
+  /** Spalte E «Antwort», vollständig */
   antwort: string;
 }
 
