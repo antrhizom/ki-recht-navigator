@@ -55,6 +55,15 @@ export default function DatenschutzPage() {
               </div>
             </div>
 
+            <div className="p-4 mb-3 bg-amber-50 rounded-lg border-2 border-amber-400 print:p-2 print:mb-2 print:rounded-none">
+              <p className="text-sm text-amber-900 print:text-[11px]">
+                <strong>Eigene Zusammenfassung – nicht juristisch geprüft.</strong> Diese Seite ist nicht
+                Teil des Fragekatalogs Sek II und stammt nicht von dessen Autorinnen und Autoren. Sie
+                vereinfacht und kann Fehler enthalten. Massgebend ist der Wortlaut der Antworten im{" "}
+                <Link href="/" className="underline font-semibold print:no-underline">KI-Recht Navigator</Link>.
+              </p>
+            </div>
+
             <div className="p-4 bg-emerald-50 rounded-lg border border-emerald-200 print:p-2 print:rounded-none">
               <p className="text-sm text-emerald-800 print:text-[11px]">
                 <strong>Dieses Dokument</strong> fasst die wichtigsten datenschutzrechtlichen Grundsätze zusammen,
@@ -348,7 +357,7 @@ export default function DatenschutzPage() {
           <footer className="mt-8 pt-4 border-t border-slate-300 print:mt-4 print:pt-2">
             <p className="text-xs text-slate-400 print:text-[9px]">
               Basierend auf dem Fragekatalog Sek II (FINAL) | Rechtliche Fragen zum KI-Einsatz an Schulen im
-              Kanton Zürich | Erstellt von valfor | <strong>Diese Informationen stellen keine Rechtsberatung dar.</strong>
+              Kanton Zürich | Eigene Zusammenfassung, nicht juristisch geprüft | <strong>Diese Informationen stellen keine Rechtsberatung dar.</strong>
             </p>
             <p className="text-xs text-slate-400 mt-1 print:text-[9px]">
               Weiterführend: KI-Recht Navigator (ki-recht-navigator.vercel.app) | ECRC42 (EduCopyrightCheck) für Urheberrechts-Checklisten

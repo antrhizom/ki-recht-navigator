@@ -112,7 +112,8 @@ export default function Impressum() {
         <Abschnitt titel="Datenschutz-Info und Urheberrecht-Info">
           <p>
             Die beiden Unterseiten sind eigene Zusammenfassungen. Sie sind nicht Teil des
-            Fragekatalogs und wurden nicht mit ihm abgeglichen.
+            Fragekatalogs, stammen nicht von dessen Autorinnen und Autoren und sind nicht
+            juristisch geprüft. Massgebend ist der Wortlaut der Antworten im Navigator.
           </p>
         </Abschnitt>
 
