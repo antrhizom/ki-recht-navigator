@@ -1,0 +1,606 @@
+{
+  "quelle": {
+    "datei": "Rechtliche Fragen - 251219_FragekatalogSekII_FINAL.xlsx",
+    "sha256": "c4a5ea7f7f96dc957e6ce686326e9141482dce780e02b9f24dc30936819a6144",
+    "spalteAntwort": "Antwort valfor"
+  },
+  "themenkategorien": [
+    "Unterrichtsmaterialien & Urheberrecht",
+    "Schüler:innendaten & Datenschutz",
+    "Leistungsbewertung & Prüfungen",
+    "Kommunikation & Interaktion mit KI",
+    "Technische Infrastruktur & Verantwortlichkeiten"
+  ],
+  "modelle": [
+    {
+      "abkuerzung": "OKI ",
+      "bezeichnung": "Offene KI-Modelle",
+      "beschreibung": "Der Hersteller/Betreiber des KI-Tools oder ein sonstiger Dritter hat Zugriff auf die Eingabe bzw.\n Inputdaten und/oder sonstige bei der Nutzung anfallenden Daten (bspw. Nutzungsdaten) und nutzt diese für das Training bzw. Weiterentwicklung des KI-Systems oder für sonstige eigene (kommerzielle) Zwecke. \nWeil der Hersteller/Betreiber oder ein Dritter die Daten zu eigenen Zwecken bearbeitet, wird er aus datenschutzrechtlicher Sicht selbst zum Verantwortlichen. Es liegt eine Bekanntgabe vor. Eine Bekanntgabe ist nur dann möglich, wenn dafür eine gesetzliche Grundlage oder eine Einwilligung im Einzelfall vorliegt. \nBei der grenzüberschreitenden Bekanntgabe sind zusätzlich die entsprechenden Voraussetzungen zu beachten."
+    },
+    {
+      "abkuerzung": "GKI",
+      "bezeichnung": "Geschlossene KI-Modelle",
+      "beschreibung": "In dieser Variante können weder der Hersteller/Betreiber des KI-Tools noch sonstige Dritte die Eingabe/Inputdaten oder sonstige Daten für eigene Zwecke nutzen. Je nachdem, welche Variante vorliegt, erhält dieser aber zumindest technisch die Möglichkeit, von den Daten Kenntnis zu nehmen."
+    },
+    {
+      "abkuerzung": "GKImW",
+      "bezeichnung": "Geschlossene Ki mit Weitergabe",
+      "beschreibung": "Input oder sonstige Daten werden extern gespeichert oder sonst in irgendeiner Form von Dritten bearbeitet. Aus datenschutzrechtlicher Sicht liegt hier eine Auftragsdatenbearbeitung vor. Diese bedarf der Integration der RR IT-AGB oder individuell ausgehandelter gleichwertiger Bestimmungen. Bei der grenzüberschreitenden Bekanntgabe sind zusätzlich die entsprechenden Voraussetzungen zu beachten."
+    },
+    {
+      "abkuerzung": "GKIoW",
+      "bezeichnung": "Geschlossene KI ohne Weitergabe",
+      "beschreibung": "Sämtliche Daten verbleiben innerhalb der Verwaltung, sie werden vollständig innerhalb der jeweiligen Verwaltungseinheit bearbeitet und gespeichert."
+    }
+  ],
+  "fragen": [
+    {
+      "nr": 1,
+      "zeile": 10,
+      "praxisfrage": "Darf ich ein Schulbuch in eine KI hochladen, um daraus Übungen zu erstellen?",
+      "juristischeFormulierung": "Ist das Hochladen urheberrechtlich geschützter Werke (z. B. Lehrmittel) in ein KI-System zur Generierung von Übungsaufgaben mit dem Urheberrecht und den Schrankenregelungen im Kanton Zürich vereinbar?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Die Erstellung von Übungsfragen durch ein KI-Tool erfolgt auf technischer Ebene durch verschiedene Schritte (Hochladen, Bereinigen, Segmentieren, Tokenisieren etc.), welche aus urheberrechtlicher Sicht als Vervielfältigung oder Bearbeitung zu qualifizieren wären. Relevant sind zwei Schritte: 1) die Vervielfältigung beim Hochladen und 2) die Bearbeitung bzw. die Änderung der Werke bei der Erstellung der Übungungsaufgaben. Eine Bearbeitung bzw. Änderung im urheberrechtlichen Sinn liegt bei Übungsaufgaben dann vor, wenn die Übungsaufgaben inhaltlich erkennbar auf dem eingegebenen Werk (bspw. Text) basieren.\n\nOKI: Nicht zulässig. Dafür wäre die Zustimmung des Rechtsinhabers (Verlag) erforderlich. \nGKImW: Das Hochladen, d.h. die Vervielfältigung, ist zulässig. Solange die Kontrolle über die Inhalte bei der Lehrperson oder der Schule verbleibt, greift die Schranke vom internen Gebrauch (je nachdem schul- oder betriebsinterer Gebrauch). Der Anbieter des KI-Tools nimmt mit Bezug auf das Hochladen entweder keine urheberrechtlich relevante Handlung vor oder nimmt als Dritter eine Vervielfältigung für den Eigengebrauchsberechtigten (Lehrperson bzw. Schule) vor. Auf der Stufe der Vervielfältigung spielt diese Abgrenzung keine Rolle, weil die Vervielfältigung durch den Eigengebrauchtsberechtigten und auch durch einen Dritten vorgenommen werden kann.\nAnders ist die Lage bei Bearbeitungen bzw. Änderungen. Bearbeitungen/Änderungen sind nur für die Lehrperson (schulintern), jedoch nicht für die Schule (betriebsintern) von der Schranke des Eigengebrauchs erfasst. Auch dürfen Dritte keine Bearbeitungen/Änderungen für den Eigengebrauchsberechtigten vornehmen.\nDas Erstellen der Übungsaufgabe im Sinne einer Bearbeitung wäre aus urheberrechtlicher Sicht nur möglich, wenn die Kontrolle über die Werke vollständig bei der Lehrperson verbleibt. Wenn die Schule involviert ist, läge zwar ein betriebsinterner Gebrauch vor, dieser erlaubt aber keine Bearbeitung bzw. Änderung. Entsprechend wäre die Zustimmung des Rechtsinhabers notwendig.  \nZudem wäre notwendig, dass der Anbieter des KI-Tools keine urheberrechtlich relevante Handlung vornimmt, denn die Möglichkeit zum Beizug eines Dritten ist nur bei Vervielfältigungen möglich. Dies wäre wohl dann der Fall, wenn der Anbieter des KI-Tools überhaupt keine Möglichkeit hat, auf die bearbeiteten Werke zuzugreifen, und auch keinen Einfluss darauf hat, wann und in welchem Umfang die Lehrperson das KI-Tool nutzt. \n\nErgänzend ist darauf hinzuweisen, dass beim schul- und betriebsinternen Gebrauch  keine (weitgehend) vollständige Vervielfältigung des im Handel erhältlichen Exemplars erfolgen darf, d.h., es darf nicht das gesamte oder fast das gesamte Schulbuch hochgeladen werden (erlaubt wäre danach das Hochladen von bis zu 75% oder bis zu 90% des Schulbuches). Jedoch gibt es auch hier Ansichten, die davon ausgehen, dass diese Gegenausnahme gerade im Zusammenhang mit digitalen Kopien nicht immer zum Zuge kommt.  \nGKIoW: Soweit die Kontrolle bei der Lehrperson verbleibt, handelt es sich um einen schulinternen Gebrauch. Beim schulinternen Gebrauch sind alle Nutzungen, d.h. auch die Bearbeitung und die Änderung, erfasst. Dies wäre zulässig. Wenn die Schule involviert ist, bedarf es der Zustimmung des Rechtsinhabers (siehe oben bei GKImW). Zudem darf keine (weitgehend) vollständige Vervielfältigung des im Handel erhältlichen Exemplars erfolgen (siehe oben zu GKlmW).\nHinweis: Der schul- und betriebsinterne Gebrauch ist teilweise vergütungspflichtig. Fragen zur Vergütung werden vorliegend jedoch nicht behandelt."
+    },
+    {
+      "nr": 2,
+      "zeile": 11,
+      "praxisfrage": "Darf ich Arbeitsblätter, die ich von einem Verlag gekauft habe, in eine KI hochladen?",
+      "juristischeFormulierung": "Ist die Weiterverarbeitung von urheberrechtlich geschützten Arbeitsblättern durch KI-Tools rechtlich zulässig, insbesondere im Hinblick auf Nutzungsrechte und Schrankenbestimmungen?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: In diesem Beispiel geht es nur um das Hochladen, welches als Vervielfältigung zu qualifizieren ist. Je nachdem, was mit den hochgeladenen Blättern passiert, liegt eine Änderung, Bearbeitung oder eine freie Benutzung vor.\n\nOKI: Nicht zulässig, dafür wäre die Zustimmung des Rechtsinhabers (Verlag) erforderlich. \nGKImW: Solange die Kontrolle über die Inhalte bei der Lehrperson oder der Schule verbleibt, greift die Schranke vom internen Gebrauch (je nachdem schul- oder betriebsinterer Gebrauch). Je nach Ansicht und Kontrollmöglichkeiten liegt dabei eine Herstellung durch Dritte (d.h. Betreiber des KI-Tools) vor oder ein rein interner Gebrauch. Im Ergebnis dürfte das Hochladen aber von der Eigengebrauchsschranke erfasst sein. Die einzelnen Arbeitsblätter dürften so im Handel nicht erhältlich sein. Vorsicht ist geboten, wenn mehrere Arbeitsblätter einer im Handel erhältlichen Sammlung hochgeladen werden. Werden die Blätter hernach weiterbearbeitet, kann eine Änderung bzw. Bearbeitung vorliegen, welche der Einwilligung des Rechtsinhabers (Verlag) bedarf. \nGKIoW: Es handelt sich um einen schulinternen Gebrauch, welcher zulässig ist (u.U. mit Beizug der Schule als Dritte i.S.v. Art. 19 Abs. 2 URG). Bezüglich des Umfangs der Arbeitsblätter gilt das zu GKImW Gesagte. "
+    },
+    {
+      "nr": 3,
+      "zeile": 12,
+      "praxisfrage": "Darf ich Texte von SuS in eine KI hochladen, um sie sprachlich verbessern zu lassen?",
+      "juristischeFormulierung": "Ist die Verarbeitung von Schülerarbeiten durch externe KI-Dienste mit den Vorgaben des kantonalen Datenschutzrechts vereinbar?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Die Texte von SuS sind als urheberrechtlich geschützte Werke zu qualifizieren, die jeweiligen SuS sind die Urheber. Das Hochladen ist als Vervielfältigung zu betrachten. Je nach Umfang der Korrekturen handelt es sich dabei um Änderungen oder urheberrechtlich nicht relevante Handlungen, weil die Werkintegrität nicht berührt wird.\n\nOKI: Aus datenschutzrechtlicher Sicht liegt eine Bekanntgabe vor, welche nur sehr eingeschränkt möglich wäre (siehe unten Frage 18). Aus urheberrechtlicher Sicht wäre die Zustimmung der betroffnen SuS erforderlich.\nGKImW: Aus datenschutzrechtlicher Sicht möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und Datenschutzfolgenabschätzung (\"DSFA\"), aus urheberrechtlicher Sicht wäre der Vorgang des Hochladens von der Eigengebrauchsschranke erfasst, die Korrektur bedürfte (je nach Umfang) als Änderung wohl der Zustimmung der SuS. \nGKIoW: Aus daten- und urheberrechtlicher Sicht wohl zulässig (mit den Einschränkungen betreffend Urheberrecht, dazu auch Frage 1). "
+    },
+    {
+      "nr": 4,
+      "zeile": 13,
+      "praxisfrage": "Kann ich urheberrechtlich geschützte Zeitungsartikel in eine KI hochladen, um Zusammenfassungen für den Unterricht zu erhalten?",
+      "juristischeFormulierung": "Ist die Vervielfältigung und Verarbeitung fremder journalistischer Werke durch KI-Systeme ohne Zustimmung der Rechteinhaber zulässig?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Das Hochladen ist als Vervielfältigung zu betrachten. Das Erstellen der Zusammenfassung ist eine Bearbeitung, welche grundsätzlich der Zustimmung des Rechtsinhabers (Zeitung) bedarf.\n\nOKI: Nicht zulässig, dafür wäre die Zustimmung des Rechtsinhabers (Zeitung) erforderlich. \nGKImW: Solange die Kontrolle über die Inhalte bei der Lehrperson verbleibt, greift die Schranke des schulinternen Gebrauchs. Diese umfasst die Vervielfältigung (Hochladen) wie auch die Bearbeitung (Erstellen der Zusammenfassung). Je nachdem, wie stark die Schule involviert ist (Kontrolle, Einfluss auf die Inhalte), liegt ein betriebsinterner Gebrauch durch die Schule vor. Dieser ermöglicht aber nur die Vervielfältigung und nicht die Bearbeitung (Erstellen der Zusammenfassung). Die Bearbeitung bedürfte der Zustimmung des Rechtsinhabers (Zeitung).\nBezüglich des Anbieters des KI-Tools stellt sich wieder die Frage, wie dessen Handlungen zu qualifizieren sind (dazu oben). Im Ergebnis dürften das Hochladen und das Erstellen der Zusammenfassung deshalb nur dann von der Eigengebrauchsschranke erfasst sein, wenn die Lehrperson als einzige die Kontrolle über die Inhalte hat. Alles andere bedürfte theoretisch der Zustimmung des Rechtsinhabers (mehr dazu in Frage 1).\nGKIoW: Es handelt sich um einen schulinternen Gebrauch, solange die Kontrolle über den Inhalt bei der Lehrperson verbleibt. Dieser ist zulässig. Ansonsten ist die Zustimmung des Rechtsinhabers notwendig. Bezüglich des Umfangs gilt das zu GKImW Gesagte."
+    },
+    {
+      "nr": 5,
+      "zeile": 14,
+      "praxisfrage": "Darf ich ein Theaterstück (z. B. Dürrenmatt) in die KI hochladen, um eine vereinfachte Version für meine Klasse zu erstellen?",
+      "juristischeFormulierung": "Ist die Bearbeitung literarischer Werke durch KI im schulischen Kontext von Schrankenregelungen gedeckt oder bedarf es einer Lizenz? Bemerkung: Statt dem Begriff  \"Bearbeitung\" sollte hier \"Hochladen\" verwendet werden, denn Vervielfältigung (Art. 10 Abs. 1 lit. a URG), Änderung (Art. 11 Abs. 1 lit. a URG) und Bearbeitung (Art. 11 Abs. 1 lit. b URG) sind unterschiedliche Nutzungsarten.",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Das Hochladen ist als Vervielfältigung zu betrachten. Das Erstellen einer vereinfachten Version ist eine Änderung oder Bearbeitung, welche grundsätzlich der Zustimmung des Rechtsinhabers bedarf. \n\nZuerst ist zu klären, ob am Theaterstück noch urheberrechtlicher Schutz besteht. Das Urheberrecht erlischt 70 Jahre nach dem Tod des Urhebers, d.h. Originalstücke von Autoren die vor 1956 gestorben sind, sind gemeinfrei und können genutzt werden (bspw. Shakespeare). Bezüglich geschützer Theaterstücke gilt Folgendes:\nOKI: Nicht zulässig, Zustimmung der Rechtsinhaber erforderlich. \nGKImW: Solange die Kontrolle über die Inhalte bei der Lehrperson verbleibt , könnte auch hier die Schranke des schulinternen Gebrauchs einschlägig sein. Sobald die Schule oder der Betreiber des KI-Tools beteiligt ist, erfordert die Bearbeitung die Zustimmung des Rechtsinhabers. Dazu kommt, dass bei einem Theaterstück regelmässig das gesamte Werk bzw. ein vollständiges Werkexemplar hochgeladen wird, sodass die Gegenausnahme greift (keine vollständige oder weitgehend vollständige Vervielfältigung des Werkexemplars) und eine Zustimmung des Rechtsinhabers erforderlich macht (zu den Vorbehalten vgl. Frage 1). Über den Eigengebrauch hinaus geht zudem jede Aufführung vor Publikum; auch hierfür wäre die Zustimmung des Rechtsinhabers notwendig. Im Bereich der Theaterstücke werden die Rechtsinhaber von der SSA (Société Suisse des Auteurs) vertreten. \nGKIoW: Gleich wie bei GKImW. "
+    },
+    {
+      "nr": 6,
+      "zeile": 15,
+      "praxisfrage": "Darf ich eine KI bitten, Aufgaben zu einem Musikstück (z. B. von Serge Gainsbourg) zu erstellen, wenn ich den Songtext eingebe?",
+      "juristischeFormulierung": "Ist das Eingeben von urheberrechtlich geschützten Musiktexten in KI-Systeme eine zulässige Nutzung nach Urheberrecht, insbesondere im schulischen Kontext?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Das Hochladen ist eine Vervielfältigung. Das Erstellen von Aufgaben zu den Musikstücken dürfte eine freie Benutzung sein, da die Werkintegrität des Stücks durch die Fragen nicht berührt wird.\n\nAuch bei Musikstücken ist zu klären, ob noch ein urheberrechtlicher Schutz besteht (siehe Frage 5). Bei urheberrechtlich geschützten Musikstücken gilt Folgendes:\nOKI: Nicht zulässig, Zustimmung des Rechtsinhabers bzw. der SUISA notwendig.\nGKImW: Solange die Kontrolle über die Inhalte bei der Lehrperson oder der Schule verbleibt, kann die Schranke des schul- oder betriebinternen Gebrauchs einschlägig sein. Der Songtext allein wird regelmässig nicht als Werkexemplar zu beurteilen sein, weshalb die Gegenausnahme (keine vollständige oder weitgehend vollständige Vervielfältigung des Werkexemplars) hier nicht einschlägig sein dürfte. \nGKIoW: Zulässig (mit den genannten Einschränkungen, vgl. Frage 1). "
+    },
+    {
+      "nr": 7,
+      "zeile": 16,
+      "praxisfrage": "Kann ich von SuS erstellte Präsentationen in die KI hochladen, um Feedback zu erhalten?",
+      "juristischeFormulierung": "Ist die Verarbeitung von urheberrechtlich geschützten Schülerarbeiten durch KI mit den Bestimmungen des Urheberrechts und des Datenschutzes vereinbar? \nBemerkug: Statt des Begriffs  \"Verarbeitung\" sollte hier \"Hochladen\" verwendet werden, denn Vervielfältigung (Art. 10 Abs. 1 lit. a URG), Änderung (Art. 11 Abs. 1 lit. b URG) und Bearbeitung (Art. 11 Abs. 1 lit. b URG) sind urheberrechtlich unterschiedliche Nutzungsarten.\nAchtung: Ein Feedback ist keine urheberrechtliche Bearbeitung. Hier ist die juristische Formulierung zur Frage unklar. ",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Aus urheberrechtlicher Sicht ist das Geben eines Feedbacks ohne Zustimmung der betroffenen SuS bei GKI zulässig (zu den Vorbehalten zu GKImW vgl. Frage 1).  Aus datenschutzrechtlicher Sicht kommt es darauf an, ob die Präsentation Personendaten enthält oder nicht. Enthält die Präsentation Personendaten, ist dies nur bei GKI zulässig (mehr dazu in Frage 18)."
+    },
+    {
+      "nr": 8,
+      "zeile": 17,
+      "praxisfrage": "Darf ich eine KI nutzen, um aus gekauften digitalen Lehrmitteln automatisch Multiple-Choice-Tests zu generieren?",
+      "juristischeFormulierung": "Ist die automatisierte Weiterverarbeitung von digitalen Lehrmitteln durch KI ohne ausdrückliche Nutzungsrechte rechtlich zulässig?",
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Vorbemerkung: Das Hochladen sind Vervielfältigungen, das Erstellen des MC-Tests ist je nach Ursprungsprodukte eine Bearbeitung oder eine freie Benutzung.\nZulässig bei GKIoW, ansonsten ist die Zustimmung des Rechtsinhabers erforderlich, solange die eingegebenen Werke erkennbar bleiben (mehr dazu in Fragen 1 und 2)."
+    },
+    {
+      "nr": 9,
+      "zeile": 18,
+      "praxisfrage": "Wem gehört das Urheberrecht an den neu erstellten Lehrmaterialien, die von einer KI auf Basis von hochgeladenen, urheberrechtlich geschützten Inhalten generiert wurden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Eine Voraussetzung für die Entstehung eines Urheberrechts ist, dass eine \"geistige Schöpfung\" vorliegt. Eine geistige Schöpfung kann nur von einem Menschen stammen. Deshalb sind die Outputs eines KI-Tools nicht vom Urheberrecht geschützt, soweit die hochgeladenen, urheberrechtlich geschützten Inhalte nicht mehr in den mittels KI erstellten Lehrmaterialien erkennbar sind. Bezüglich der Zulässigkeit des Hochladens kann auf Frage 1 verwiesen werden. Zudem sind allfällige vertragliche Schranken bezüglich der Nutzung zu beachten."
+    },
+    {
+      "nr": 10,
+      "zeile": 19,
+      "praxisfrage": "Macht es einen rechtlichen Unterschied bezüglich der Nutzungsrechte, ob die erstellten Materialien nur innerhalb der eigenen Klasse oder auf einer schulweiten Plattform geteilt werden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Weil kein Urheberrecht an den erstellten Materialien entsteht und wenn keine urheberrechtlich geschützten Inhalte in den mittels KI erstellten Lehrmaterialien erkennbar sind, macht es keinen Unterschied (mehr dazu Frage 9). Bezüglich der Zulässigkeit des Hochladens kann auf Frage 1 verwiesen werden."
+    },
+    {
+      "nr": 11,
+      "zeile": 20,
+      "praxisfrage": "Dürfen offizielle, kantonal oder national geschützte Dokumente wie Lehrpläne auf die Plattform eines externen KI-Anbieters hochgeladen werden, um die Unterrichtsplanung zu unterstützen?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Durch Urheberrecht geschützte Dokumente dürfen nur mit Zustimmung der jeweiligen Rechtsinhaber auf die Plattform eines externen Anbieters geladen werden. "
+    },
+    {
+      "nr": 12,
+      "zeile": 21,
+      "praxisfrage": "Stellt ein von einer Lehrperson konfigurierter KI-Tutor (inkl. Prompts und Referenz-Inhalte) ein schützenswertes Werk dar?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Nein, da der KI-Tutor nicht von einem Menschen erschaffen wurde, stellt er kein Werk im Sinne des Urheberrechts dar (mehr dazu Frage 9). "
+    },
+    {
+      "nr": 13,
+      "zeile": 22,
+      "praxisfrage": "Wer besitzt die Urheber- und Nutzungsrechte an einem Bild, das von einer Lehrperson mittels einer KI für den Unterricht generiert wurde? Bemerkung: Die Frage ist unglücklich verfasst. Nutzungsrechte sind ein Teil der möglichen Urheberrechte, nämlich neben den Urheberpersönlichkeitsrechten. Zudem ist der sachenrechtlich geprägte Begriff \"besitzt\" bei Rechten heikel.",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Am Bild besteht kein Urheberrecht, soweit die hochgeladenen, urheberrechtlich geschützten Inhalte nicht mehr im mittels KI erstellten Bild erkennbar sind (mehr dazu Frage 9). Es ist im Einzelfall denkbar, dass die von der Lehrperson eingegebenen \"Prompts\" und/oder die Nachbearbeitung des mittels KI erstellten Bildes durch die Lehrperson einen individuellen Charakter aufweisen und somit urheberrechtlich geschützt sind. Bei dieser Annahme ist jedoch Zurückhaltung geboten. Weiter ist zu beachten, dass die Eingabe von Beispielbildern u.ä. unter Umständen eine Urheberrechsverletzung darstellen kann. Bei der Nutzung der KI-Bilder sind allfällige vertragliche Vorgaben des  jeweiligen Anbieters des KI-Tools zu beachten, bspw. Kennzeichnungspflichten oder Verbote zur kommerziellen Verwertung."
+    },
+    {
+      "nr": 14,
+      "zeile": 23,
+      "praxisfrage": "Wem gehört das Urheberrecht an einem von einem Schüler mittels KI erstellten Bild oder Text? Dem Schüler, der Schule oder dem KI-Anbieter?",
+      "juristischeFormulierung": null,
+      "themenkategorie": null,
+      "antwort": "Es besteht grundsätzlich kein Urheberrecht am Bild (mehr dazu Frage 9); jedoch sind allfällige vertragliche Nutzungsbeschränkungen vom Anbieter des KI-Tools zu beachten (dazu oben)."
+    },
+    {
+      "nr": 15,
+      "zeile": 24,
+      "praxisfrage": "Darf ein KI-generiertes Bild, das den Stil eines bekannten Künstlers imitiert oder Elemente aus geschützten Werken erkennbar enthält, im Unterricht oder in veröffentlichten Lehrmaterialien verwendet werden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Enthält ein KI-generiertes Bild erkennbar Teile eines geschützten Werkes (mehr zum Schutzablauf in Frage 5), kann dessen Veröffentlichung eine Urheberrechtsverletzung darstellen. "
+    },
+    {
+      "nr": 16,
+      "zeile": 25,
+      "praxisfrage": "Wenn eine KI auf Basis von \"anonymisierten Assessments oder anderen Quellen\" neue Prüfungsaufgaben erstellt, wie kann sichergestellt werden, dass keine Urheberrechtsverletzung an den ursprünglichen Aufgaben vorliegt?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Es kommmt auf das verwendete KI-Tool an. Wenn es sich bei den verwendeten Materialien um urheberrechtlich geschützte Werke handelt, gilt das unter Frage 1 ausgeführte."
+    },
+    {
+      "nr": 17,
+      "zeile": 26,
+      "praxisfrage": "Wenn eine Lehrperson einen bestehenden, urheberrechtlich geschützten Aufgabentext in eine KI eingibt, um ihn sprachlich zu vereinfachen, stellt der Output eine erlaubte Bearbeitung im Sinne des Urheberrechts dar oder eine unzulässige Vervielfältigung?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Unterrichtsmaterialien & Urheberrecht",
+      "antwort": "Grundsätzlich nur bei GKIoW (mehr dazu in Fragen 1 und 2). "
+    },
+    {
+      "nr": 18,
+      "zeile": 27,
+      "praxisfrage": "Darf ich Namen und Noten von SuS in ein KI-Tool eingeben?",
+      "juristischeFormulierung": "Ist die Verarbeitung von besonders schützenswerten Personendaten (z. B. Leistungsdaten) in externen KI-Systemen datenschutzrechtlich zulässig?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "OKI: Nein. Hier liegt eine Bekanntgabe vor, welche nur eingeschränkt möglich ist. Eine Bekanntgabe könnte grundsätzlich auf eine Einwilligung im Einzelfall gestützt werden; allerdings ist umstritten, wann tatsächlich ein solcher Einzelfall vorliegt. Wird ein KI-Tool nicht nur einmalig, sondern kontinuierlich eingesetzt, ist unklar, ob noch von einem Einzelfall gesprochen werden kann. Zudem ist die Einholung einer Einwilligung in der Praxis oft wenig zweckmässig. Je nach Anbieter sind darüber hinaus  die Anforderungen an die grenzüberschreitende Bekanntgabe von Personendaten zu berücksichtigen. \nGKImW: Hier dürften der Anbieter des KI-Tools und ein allfälliger Cloud-Anbieter als Auftragsdatenbearbeiter zu qualifizieren sein. Es ist dabei insb. das Verhältnismässigkeitsprinzip zu beachten. Das bedeutet, dass die Datenbearbeitung durch das Tool geeignet und erforderlich sein muss. Um dieses Prinzip zu wahren, ist die Bearbeitung auf das Wesentliche zu beschränken und darf nicht erheblich invasiver ausfallen als bei einer analogen Bearbeitung, Wenn dieses Prinzip gewahrt ist, ist die Bearbeitung zulässig mit vertraglichen Vorkehrungen und DSFA - das gilt auch für besondere Personendaten gemäss IDG (\"besondere PD\"); \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips. Das gilt auch für besondere PD (Leistungsdaten sind jedoch ohnehin keine besonderen PD, diese sind gesetzlich klar definiert, bzw. umschrieben, wenn auch nicht abschliessend)."
+    },
+    {
+      "nr": 19,
+      "zeile": 28,
+      "praxisfrage": "Darf ich Schüleraufsätze anonymisiert in eine KI eingeben, um Feedback zu bekommen?",
+      "juristischeFormulierung": "Genügt eine Anonymisierung von Schülerarbeiten vor Verarbeitung in KI-Systemen den Anforderungen des Datenschutzgesetzes?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Ja, solange es sich tatsächlich um eine rechtsgenügende Anonymisierung handelt (irreversibel jeglicher Bezug auf eine identifizierbare Person entfernt), was in der Praxis eine grosse Herausforderung ist. Alleine die Entfernung von Namen genügt i.d.R. nicht, ausser es handelt sich um generische vergleichbare Antworten in einer grossen Menge. Das gilt gegenüber dem KI-Anbieter auch bei handschriftlichen Arbeiten (ohne weitere Merkmale stellen diese lediglich für Lehrpersonen, welche die SuS identifizieren können, Personendaten dar).\nAchtung: Schüleraufsätze können urheberrechtlich geschützt sein (dazu oben Frage 3)."
+    },
+    {
+      "nr": 20,
+      "zeile": 29,
+      "praxisfrage": "Darf ich Fotos der Klasse in eine KI hochladen, um ein Poster erstellen zu lassen?",
+      "juristischeFormulierung": "Ist die Verarbeitung von Bilddaten von Schülerinnen und Schülern durch KI-Systeme mit dem kantonalen Datenschutzgesetz vereinbar?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Grundsätzlich nein, sowohl für OKI, GKImW als auch GKIoW (u.U. fehlende gesetzliche Grundlage, Verletzung der Verhältnismässigkeit/des Zweckbindungsgrundsatzes), möglicherweise könnte hier aber auf eine Einwilligung im Einzelfall (bspw. ein Klassenfoto, nicht alle Fotos der Klasse für die Zukunft) abgestützt werden. Bei OKI und GKImW sind dabei unter Umständen die Voraussetzungen der grenzüberschreitenden Bekanntgabe zu prüfen. "
+    },
+    {
+      "nr": 21,
+      "zeile": 30,
+      "praxisfrage": "Darf ich Sprachaufnahmen von SuS machen, um mit KI die Aussprache analysieren zu lassen?",
+      "juristischeFormulierung": "Ist die Verarbeitung biometrischer Sprachdaten von Schüler:innen durch KI-Tools datenschutzrechtlich zulässig?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Unter dem DSG stellen Sprachdaten/Stimmaufnahmen nur besonders schützenswerte biometrische Daten dar, wenn sie auf einem spezifischen technischen Verfahren beruhen, das die eindeutige Identifizierung oder Authentifizierung einer Person erlaubt. In allen anderen Fällen sind Sprachdaten keine biometrischen Daten. Im DSG wird dies damit begründet, dass der Zusatz \"die eine natürliche Person eindeutig indentifizieren\" eingefügt wurde. Genau dieser Zusatz fehlt aber im IDG. Uns ist nicht bekannt, wie die DSB ZH dazu steht. Aber es kann davon ausgegangen werden, dass bereits auf der Stufe \"biometrische Daten\" ein Ausschluss als besondere PD möglich ist (sofern keine entsprechenden Verfahren angewendet wurden), auch wenn dieser explizite Zusatz fehlt. Ansonsten wäre bereits jede gewöhnliche Fotografie ein biometrisches Datum und somit besonderes PD, was nicht beabsichtigt gewesen sein kann.  \nOKI: Nein, aber möglicherweise könnte hier auf eine Einwilligung (wiederum im Einzelfall) abgestützt werden bezüglich der Bekanntgabe an OKI; \nGKImW: Möglich unter Wahrung der Verhältnismässigkeit mit vertraglichen Vorkehrungen und DSFA.\nGKIoW: Ja unter Wahrung der Verhältnismässigkeit. \nBei OKI und GKImW sind dabei unter Umständen die Voraussetzungen der grenzüberschreitenden Bekanntgabe zu prüfen. "
+    },
+    {
+      "nr": 22,
+      "zeile": 31,
+      "praxisfrage": "Darf ich Schülerlösungen hochladen, damit KI Vorschläge zur Benotung gibt?",
+      "juristischeFormulierung": "Ist die Verwendung von Schülerlösungen in KI-Systemen zur automatisierten Leistungsbewertung mit Datenschutzrecht und Bildungsrecht vereinbar?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "OKI: Nein; \nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA; \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips.\nWichtig: Die Leistungsbeurteilung ist eine zentrale Aufgabe der Lehrperson, deshalb kann der Benotungsvorschlag nicht unbesehen übernommen werden. Wenn die Entscheidung unbesehen übernommen würde, könnte es sich unter dem DSG um eine automatisierte Einzelentscheidung handeln, welche besonderen Voraussetzungen (inkl. dem Recht auf menschliches Gehör) unterliegt. Eine automatisierte Einzelentscheidung liegt aber nur dann vor, wenn die Entscheidung für die betroffene Person mit einer Rechtsfolge verbunden ist oder sie anderweitig erheblich beeinträchtigt. Diese Relevanz dürfte bei einer einzelnen Note nicht vorliegen. Im IDG finden sich zudem keine Vorgaben zu automatisierten Einzelentscheidungen. "
+    },
+    {
+      "nr": 23,
+      "zeile": 32,
+      "praxisfrage": "Darf ich mit KI die Chatprotokolle einer Klassendiskussion auswerten lassen?",
+      "juristischeFormulierung": "Ist die Verarbeitung von Kommunikationsdaten von Schüler:innen durch KI-Tools datenschutzkonform?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "OKI: Nein. \nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA (dazu Frage 18); \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 24,
+      "zeile": 33,
+      "praxisfrage": "Darf ich Schülerprofile (z. B. Interessen, Sprachstand) in eine KI eingeben, um personalisierte Lernmaterialien zu generieren?",
+      "juristischeFormulierung": "Ist die Profilbildung von Schüler:innen durch KI-Systeme mit dem kantonalen Datenschutzgesetz und Bildungsrecht vereinbar?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "OKI: Nein; \nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA. Bei Schülerprofilen könnte es sich um besondere PD im Sinne eines Profiling handeln (automatisierte Auswertung um wesentliche persönliche Merkmale zu analysieren oder persönliche Entwicklungen vorherzusagen), dabei sind im Rahmen der DSFA besondere Schutz- und Sicherheitsvorkehrungen zu treffen. \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 25,
+      "zeile": 34,
+      "praxisfrage": "Kann ich Schülerdaten in einem KI-Tool speichern, wenn der Anbieter die Server in der EU betreibt?",
+      "juristischeFormulierung": "Reicht ein Serverstandort in der EU aus, um die Anforderungen des kantonalen Datenschutzrechts zu erfüllen?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Ja. I.d.R wird ein Serverstandort in der EU gleich behandelt wie ein Serverstandort in der Schweiz, da sämtliche EU Länder aus der Sicht der Schweiz (und des Kantons Zürich) über einen angemessenen Datenschutz verfügen. Besondere Vorsicht ist jedoch bei Anbietern geboten, welche den Hauptsitz in den USA haben, amerikanischem Recht unterstehen und somit auch Daten ihrer EU- oder CH-Tochtergesellschaften in die USA gelangen könnten, unabhängig vom regulären Standort des Servers und/oder Inkorporationsort der Tochtergesellschaft."
+    },
+    {
+      "nr": 26,
+      "zeile": 35,
+      "praxisfrage": "Darf ich Schülerdaten in ein KI-System hochladen, wenn dieses Server in den USA nutzt?",
+      "juristischeFormulierung": "Ist die Übermittlung von Personendaten von Schüler:innen an KI-Anbieter in Drittländern (z. B. USA) zulässig?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Nein. Ins Ausland dürfen Daten nur bekannt gegeben werden, wenn im Zielland ein angemessener Datenschutz besteht und/oder zusätzliche Sicherheitsmassnahmen umgesetzt werden. Grundsätzlich ist dies in den USA nur bei Unternehmen der Fall, welche sich unter dem Swiss-U.S. Data Privacy Framework registiert haben (was bei den meisten grösseren Cloud-Anbietern der Fall ist). Nach Ansicht der DSB ZH müssen bei der Übermittlung von besonderen PD aber auch in diesen Konstellationen besondere Massnahmen ergriffen werden, d.h. Daten dürften in der Regel nur verschlüsselt übermittelt oder gespeichert werden."
+    },
+    {
+      "nr": 27,
+      "zeile": 36,
+      "praxisfrage": "Darf ich ChatGPT mit einer Schülerliste (Namen + E-Mail) füttern, um Gruppeneinteilungen vorzunehmen?",
+      "juristischeFormulierung": "Ist die Eingabe von identifizierenden Schülerdaten in ein KI-System zur Organisation von Gruppenarbeiten datenschutzkonform?",
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Nein. In ChatGPT dürfen keinerlei Personendaten eingegeben werden, da Open AI als Betreiber von ChatGPT (mindestens in den Grund-, bzw. Konsumentenversionen) keine genügende datenschutzrechtliche Zusicherungen abgibt. Besondere bezahlte Instanzen von ChatGPT (bspw. Enterprise) bedürfen einer eingehenderen Prüfung."
+    },
+    {
+      "nr": 28,
+      "zeile": 37,
+      "praxisfrage": "Welche datenschutzrechtlichen Vorgaben sind zu beachten, wenn eine Lehrperson personenbezogene Daten (z.B. Namen von Eltern, spezifische Probleme von Schülern) in eine KI eingibt, um eine E-Mail zu formulieren?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Im Grundsatz findet hierauf das IDG vollumfänglich Anwendung. Die Datenbearbeitung durch die Schule und Lehrpersonen (als Teil der Schule, d.h. des öffentlichen Organs) unterliegt grundsätzlich dem IDG. Dies gilt nicht nur mit Bezug auf die Daten von SuS, sondern auch mit Bezug auf Daten von Eltern und Erziehungssberechtigten. Werden besondere PD wie bspw. Disziplinarmassnahmen oder Daten über die Gesundheit bearbeitet, sind unter Umständen besondere Massnahmen (im Rahmen der DSFA) zu ergreifen."
+    },
+    {
+      "nr": 29,
+      "zeile": 38,
+      "praxisfrage": "Besteht bei der Nutzung von KI für die Kommunikation mit Eltern die Gefahr der Verletzung der beruflichen Schweigepflicht oder des Amtsgeheimnisses?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Diese Frage ist in dieser Breite nicht beantwortbar und bedarf einer Eingrenzung der Konstellationen. In vielen Fällen dürfte das Amtsgeheimnis aber durch eine Offenbarung von bestimmten Informationen in eine KI verletzt werden, wenn sie in OKI oder GKImW eingegeben werden. "
+    },
+    {
+      "nr": 30,
+      "zeile": 39,
+      "praxisfrage": "Wie ist die Datenspeicherung zu regeln, wenn ein Schüler dem KI-Tutor persönliche Lernschwächen offenbart, um gezieltes Feedback zu erhalten?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "Es sind die üblichen Vorgaben bezüglich der Datenspeicherung zu beachten. Lernschwächen können unter Umständen als besondere PD qualifiziert werden, weshalb (im Rahmen der notwendigen DSFA) besondere Massnahmen im Hinblick auf den Ort und die Art der Speicheurng ergriffen werden müssen. Nach einer Genehmigung solcher KI-Tutoren durch die DSB ZH wären die SuS grundsätzlich selber verantwortlich für Daten, die sie darin eingeben."
+    },
+    {
+      "nr": 31,
+      "zeile": 40,
+      "praxisfrage": "Unter welchen datenschutzrechtlichen Bedingungen dürfen Sprach- und Stimmaufnahmen von minderjährigen Schülern für das Konversationstraining mit einer KI verarbeitet und gespeichert werden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Schüler:innendaten & Datenschutz",
+      "antwort": "OKI: Unter keinen. Eine Ausnahme gilt, wenn die SuS in einem Einzelfall (!) unter Kenntnis aller relevanten Informationen einwilligen.\nGKImW: Unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA (dazu Frage 18); \nGKIoW: Unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 32,
+      "zeile": 41,
+      "praxisfrage": "Darf ich Prüfungen mit KI korrigieren lassen?",
+      "juristischeFormulierung": "Ist die automatisierte Auswertung von Prüfungsleistungen durch KI mit den Vorgaben des Datenschutz- und Bildungsrechts vereinbar?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Es sind die urheber- und datenschutzrechtlichen Schranken zu beachten. \nOKI: Aus datenschutzrechtlicher Sicht nein (ausser vollständig anonymisiert), aus urheberrechtlicher Sicht u.U. mit Zustimmung der SuS möglich. \nGKImW: Ja, unter Wahrung des Verhältnismässikgeitsprinzips. Dies bedarf jedoch einer DSFA und vertraglichen Vorkehrungen. \nGKIoW: Ja. \n\nDas Bewerten von Leistungen gehört jedoch zu den Pflichten der Lehrperson. Wenn sie dazu Werkzeuge oder Hilfsmittel benutzt, bleibt sie für die Bewertung verantwortlich, d.h. die Ausgaben des KI-Tools müssen sorgfältig geprüft werden. "
+    },
+    {
+      "nr": 33,
+      "zeile": 42,
+      "praxisfrage": "Darf ich KI nutzen, um Schülerarbeiten auf Plagiate zu prüfen?",
+      "juristischeFormulierung": "Ist der Einsatz von KI-Plagiatserkennungssystemen datenschutz- und urheberrechtlich zulässig?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "OKI: Aus datenschutzrechtlicher Sicht nein (ausser vollständig anonymisiert), aus urheberrechtlicher Sicht u.U. mit Zustimmung der SuS möglich. \nGKImW: Ja. Das unlautere Verhalten bei Schülerarbeiten ist ein Disziplinarfehler. Die SuS sind daher über den Einsatz der Software zu informieren (s.a. Frage 55). Zudem ist das Verhältnismässigkeitsprinzip einzuhalten, eine DSFA durchzuführen und vertragliche Massnahmen zu ergreifen. \nGKIoW: Ja. Die Sus sind über den Einsatz der Software zu informieren. "
+    },
+    {
+      "nr": 34,
+      "zeile": 43,
+      "praxisfrage": "Darf ich KI einsetzen, um Aufsätze von SuS nach Sprache und Inhalt zu bewerten?",
+      "juristischeFormulierung": "Ist eine automatisierte Bewertung von Schülerarbeiten durch KI rechtlich zulässig, insbesondere im Hinblick auf Datenschutz und Gleichbehandlung?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Vgl. oben Frage 32."
+    },
+    {
+      "nr": 35,
+      "zeile": 44,
+      "praxisfrage": "Darf ich KI Vorschläge für Zeugnisnoten berechnen lassen?",
+      "juristischeFormulierung": "Ist der Einsatz von KI zur Generierung von Notenvorschlägen mit Bildungs- und Datenschutzrecht vereinbar?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Vgl. oben Frage 32. Beim Punkt Verhältnismässigkeit ist jedoch zweifelhaft, ob eine KI tatsächlich geeignet ist, um Notenvorschläge zu genererieren. "
+    },
+    {
+      "nr": 36,
+      "zeile": 45,
+      "praxisfrage": "Darf ich KI nutzen, um individuelle Lernstände festzustellen?",
+      "juristischeFormulierung": "Ist eine automatisierte Erhebung von Lernstandsdaten durch KI mit dem Datenschutzrecht konform?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Vgl. oben Frage 32. "
+    },
+    {
+      "nr": 37,
+      "zeile": 46,
+      "praxisfrage": "Darf ich mit KI Simulationen für mündliche Prüfungen erstellen lassen (z. B. Rollenspiele)?",
+      "juristischeFormulierung": "Ist der Einsatz von KI-Systemen zur Prüfungsvorbereitung mit Bildungsrecht und Urheberrecht vereinbar?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Ja. Werden als Eingabe oder während der Prüfung urheberrechtlich geschützte Werke oder Personendaten genutzt bzw. bearbeitet, sind die jeweiligen Grenzen zu beachten (dazu Frage 1 und 18). Die Lehrperson bleibt für die Bewertung verantwortlich (dazu Frage 32). "
+    },
+    {
+      "nr": 38,
+      "zeile": 47,
+      "praxisfrage": "Darf ich KI einsetzen, um schriftliche Prüfungen in Fremdsprachen automatisch zu bewerten?",
+      "juristischeFormulierung": "Ist eine automatisierte Korrektur von Fremdsprachenprüfungen durch KI zulässig, insbesondere unter dem Aspekt der Transparenz und Nachvollziehbarkeit?",
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Vgl. oben Frage 32. "
+    },
+    {
+      "nr": 39,
+      "zeile": 48,
+      "praxisfrage": "Wie ist die \"vollständige Anonymisierung\" von Prüfungen oder Übungen rechtlich definiert, bevor diese zur Variation in eine KI hochgeladen werden dürfen? Reicht das Entfernen von Namen und Klasse?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Eine vollständige Anoymisierung ist schwer zu bewerkstelligen. Es müssten sämtliche Merkmale, aufgrund derer sich eine Person potentiell (d.h. ohne unverhältnismässigen Aufwand) identfizieren liesse, entfernt werden (dazu oben Frage 19). Das Entfernen von Name und Klasse würde allenfalls bei einer Multiple Choice Prüfung genügen."
+    },
+    {
+      "nr": 40,
+      "zeile": 49,
+      "praxisfrage": "Ist eine von einer KI vorgeschlagene Note oder Bewertung rechtlich anfechtbar und wer haftet für Bewertungsfehler, die durch die KI verursacht wurden (Lehrperson, Schule, KI-Anbieter)?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Je nach Relevanz der Note/Bewertung, könnte es sich um eine automatisierte EInzelentscheidung handeln (dazu oben Frage 22). \n\nDas Bewerten von Leistungen gehört wie erwähnt zu den Pflichten der Lehrperson - diese bleibet alleine dafür verantwortlich bei Benutzung von Werkzeugen oder Hilfsmitteln. Bewertungsfehler der KI werden entsprechend vollumfänglich der Lehrperson, bzw. der Schule (und gemäss jetzigem Stand nie dem KI-Anbieter) zugerechnet. Es gilt als notorisch bekannt, dass auf KI kein Verlass ist und jeder Output sorgfältig geprüft werden muss. Auch schliesst jeder KI Anbieter jegliche Haftung für Output aus - wobei die Zulässigkeit dieses vollumfängliche Ausschlusses Gegenstand häufiger Diskussionen bildet. "
+    },
+    {
+      "nr": 41,
+      "zeile": 50,
+      "praxisfrage": "Benötigt die Schule eine explizite Einwilligung der Erziehungsberechtigten, um KI-Systeme für die Korrektur von bewerteten Leistungen einzusetzen?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Nein, es gelten die allgemeinen Grenzen des Datenschutz- und Urheberrechts\n(s. dazu insbesondere Frage 32). \n\nSofern auf eine Einwilligung abgestützt werden soll, können urteilsfähige Minderjährige selber einwilligen und eine Einwilligung der Erziehungsberechtigten ist nicht nötig."
+    },
+    {
+      "nr": 42,
+      "zeile": 51,
+      "praxisfrage": "Unter welchen datenschutzrechtlichen Bedingungen dürfen \"Lerner-Daten\" (z.B. ausgefüllte Übungen, Prüfungsergebnisse) von Schülerinnen und Schülern durch eine KI ausgewertet werden, um den Wissensstand zu bestimmen?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Vgl. dazu oben Frage 32."
+    },
+    {
+      "nr": 43,
+      "zeile": 52,
+      "praxisfrage": "Ist für die KI-basierte Auswertung von Lerner-Daten zur Bestimmung des Wissensstandes die explizite Einwilligung der Erziehungsberechtigten erforderlich?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Nein, vgl. oben Frage 41. "
+    },
+    {
+      "nr": 44,
+      "zeile": 53,
+      "praxisfrage": "Ab wann gilt die Nutzung einer KI zur Textkorrektur nicht mehr als erlaubtes Hilfsmittel, sondern als Täuschungsversuch oder Plagiat? Wo ist hier die rechtliche Grenze zu ziehen?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Leistungsbewertung & Prüfungen",
+      "antwort": "Dazu gibt es rechtlich keine Vorgaben. Es ist Sache der jeweiligen Schullleitung bzw. des Bildungsrates, dafür Regeln zu setzen. Die SuS sind über die Regeln zu informieren. \nS. hierzu auch Frage 68."
+    },
+    {
+      "nr": 45,
+      "zeile": 54,
+      "praxisfrage": "Darf ich meine Schüler direkt mit ChatGPT arbeiten lassen?",
+      "juristischeFormulierung": "Ist der direkte Zugang von Schüler:innen zu externen KI-Diensten rechtlich zulässig, insbesondere in Bezug auf Datenschutz und Aufsichtspflichten?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "Da ChatGPT in verschiedenen Versionen angeboten wird und deren Nutzungsbedingungen sich ständig ändern, sind generelle Aussagen schwierig. Allgemein muss die Nutzung von ChatGPT mit den Vorgaben der Lehrpläne im Einklang stehen. \n\nBei ChatGPT Versionen, die als OKI oder GKImW ausgestaltet sind, dürfen die SuS von Seiten der Schule nicht zur Nutzung verpflichtet werden, wenn die Eingabe von Personendaten für die Nutzung notwendig ist. Auch sind die SuS darauf hinzuweisen, keine urheberrechtlich geschützten Werke in solche ChatGPT Versionen heraufzuladen."
+    },
+    {
+      "nr": 46,
+      "zeile": 55,
+      "praxisfrage": "Darf ich eine KI bitten, Elternbriefe aus Schülerdaten zu erstellen?",
+      "juristischeFormulierung": "Ist die Verarbeitung personenbezogener Daten von Schüler:innen und Eltern in KI-Systemen zur Generierung von Elterninformationen zulässig?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "OKI: Nein.\nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA (dazu Frage 18); \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 47,
+      "zeile": 56,
+      "praxisfrage": "Darf ich mit KI Elternbriefe übersetzen lassen, wenn Namen der Schüler darin stehen?",
+      "juristischeFormulierung": "Ist die Verarbeitung personenbezogener Daten in Übersetzungs-KI-Tools mit Datenschutzrecht vereinbar?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "OKI: Nein.\nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA (dazu Frage 18); \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 48,
+      "zeile": 57,
+      "praxisfrage": "Darf ich SuS erlauben, ihre Hausaufgaben mit KI erledigen zu lassen?",
+      "juristischeFormulierung": "Ist die Nutzung von KI-Systemen zur Erledigung schulischer Leistungsnachweise rechtlich zulässig?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "Erlauben ist grundsätzlich möglich, wenn dies mit den Vorgaben des Lehrplanes im Einklang steht. S. hierzu auch Frage 68."
+    },
+    {
+      "nr": 49,
+      "zeile": 58,
+      "praxisfrage": "Darf ich KI nutzen, um für jeden Schüler ein Lernjournal zu führen?",
+      "juristischeFormulierung": "Ist die systematische Dokumentation individueller Lernentwicklungen durch KI datenschutzkonform?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "OKI: Nein.\nGKImW: Möglich unter Wahrung des Verhältnismässigkeitsprinzips mit vertraglichen Vorkehrungen und DSFA (dazu Frage 18); \nGKIoW: Ja, unter Wahrung des Verhältnismässigkeitsprinzips (dazu Frage 18)."
+    },
+    {
+      "nr": 50,
+      "zeile": 59,
+      "praxisfrage": "Darf ich KI einsetzen, um Schüler-Feedbacks automatisiert auszuwerten?",
+      "juristischeFormulierung": "Ist die Verarbeitung von Feedbackdaten von Schüler:innen durch KI-Systeme rechtlich zulässig?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "Es kommt darauf an, ob die Schüler-Feedbacks Personendaten oder urheberrechtlich geschützte Werke darstellen. Wenn dies der Fall ist, sind die jeweiligen Grenzen zu beachten (dazu Frage 1 und 18). Unter diesen Aspekten ist bspw. die Auswertung von anonymen Multiple-Choice-Feedbacks durch ein KI-Tool möglich (bei allen Modellen). "
+    },
+    {
+      "nr": 51,
+      "zeile": 60,
+      "praxisfrage": "Darf ich SuS verpflichten, ihre Daten in eine KI einzugeben (z. B. für Sprachübungen)?",
+      "juristischeFormulierung": "Ist eine verpflichtende Nutzung von KI-Systemen durch Schüler:innen datenschutzrechtlich zulässig?",
+      "themenkategorie": "Kommunikation & Interaktion mit KI",
+      "antwort": "Es kommt auf das jeweilige KI-Tool an, ob die Verwendung überhaupt zulässig ist, bei OKI ist eine solche Verpflichtung nicht zulässig.\nBei den GKI ist bei der verpflichtenden Nutzung besonders auf die Einhaltung des Verhältnismässigkeitsprinzips zu achten, dies ist bei GKImW eher ein Problem als bei GKIoW.\nDie Einhaltung auch des Lehrplans ist dabei separat zu beachten."
+    },
+    {
+      "nr": 52,
+      "zeile": 61,
+      "praxisfrage": "Wer haftet, wenn durch ein KI-Tool Daten von SuS in falsche Hände geraten?",
+      "juristischeFormulierung": "Wie ist die Haftung geregelt, wenn personenbezogene Daten von Schüler:innen durch KI-Systeme missbräuchlich verarbeitet oder offengelegt werden?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Dies hängt vom jeweiligen KI-Tool und von der verantwortlichen Stelle für dessen Einsatz ab. Kommt es zu einer ungewollten Offenlegung von Daten, ist davon auszugehen, dass zumindest der Grundsatz der Datensicherheit verletzt wurde, für dessen Einhaltung die Schule verantwortlich ist. Kommt es dadurch zu Schäden ist zwischen der zivil- und der strafrechtlichen Verantwortung zu unterscheiden. Aus zivilrechtlicher Sicht greift die Staatshaftung, d.h. die Gemeinde haftet, welche unter Umständen auf die Angestellten Regress nehmen kann. Zudem haftet der Hersteller und/oder Betreiber gestützt auf vertragliche und ausservertragliche Normen (wobei sich in der Praxis Durchsetzungsschwierigkeiten, insb. bei ausländischen Anbietern, ergeben). Auch ohne Nachweis eines Schadens können Ansprüche auf Unterlassung, Beseitigung oder Feststellung gegen alle Beteiligten geltend gemacht werden.\nIst das Verhalten strafrechtlich relevant, haftet jede jeweils vorsätzlich oder fahrlässig handelnde natürliche Person. Auch eine Unterlassung kann unter Umständen strafbar sein. Es gelten die üblichen Voraussetzungen zur Teilnehmerschaft (Gehilfenschaft/Mittäterschaft) und Anstiftung. \n"
+    },
+    {
+      "nr": 53,
+      "zeile": 62,
+      "praxisfrage": "Darf ich kostenlose KI-Tools nutzen, auch wenn unklar ist, wo die Daten gespeichert werden?",
+      "juristischeFormulierung": "Ist der Einsatz kostenloser, datenunklarer KI-Dienste im Unterricht mit dem kantonalen Datenschutzgesetz vereinbar?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Nein, zumindest nicht wenn Personendaten oder urheberrechtlich geschützte Werke bearbeitet werden. "
+    },
+    {
+      "nr": 54,
+      "zeile": 63,
+      "praxisfrage": "Darf ich kommerzielle KI-Lizenzen mit Schulgeld kaufen, um Unterrichtsmaterialien zu erstellen?",
+      "juristischeFormulierung": "Ist die Finanzierung kommerzieller KI-Software durch öffentliche Mittel mit Vergaberecht und Datenschutzrecht vereinbar?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Aus vergaberechtlicher Sicht ergeben sich keine Besonderheiten mit Bezug auf die Beschaffung von KI-Software. Die Beschaffung erfolgt in der Regel durch das Mittelschul- und Berufsbildungsamt. Aus datenschutzrechtlicher Sicht sind die Vorgaben des kantonalen Datenschutzes zu beachten, wenn im System Personendaten bearbeitet werden."
+    },
+    {
+      "nr": 55,
+      "zeile": 64,
+      "praxisfrage": "Muss ich Eltern oder SuS informieren, wenn ich eine KI im Unterricht verwende?",
+      "juristischeFormulierung": "Besteht eine Informationspflicht gegenüber Schüler:innen und Eltern bei der Verarbeitung personenbezogener Daten durch KI-Systeme?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Das kantonale Recht sieht eine Transparenzpflicht vor. Nach Praxis der DSB ZH sind die betroffenen SuS beim Einsatz von Plagiatssoftware zu informieren. Dies weil für unlauteres Verhalten bei Prüfungen bzw. Hausarbeiten Disziplinarmassnahmen drohen. Bei der herkömmlichen Verwendung von KI im Unterricht ergibt sich aus dem Transparenzgrundsatz jedoch keine Informationspflicht. Es kommt daher auf den jeweiligen Einzelfall an. Je nach Einsatzgebiet und Umfang der Bearbeitung von Personendaten ist eine Information vorsichtshalber zu empfehlen."
+    },
+    {
+      "nr": 56,
+      "zeile": 65,
+      "praxisfrage": "Darf ich KI-Systeme nutzen, die keine Schweizer oder EU-Datenschutzstandards erfüllen?",
+      "juristischeFormulierung": "Ist die Nutzung von KI-Tools ohne adäquates Datenschutzniveau mit dem kantonalen Datenschutzrecht zulässig?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Nein, zumindest nicht wenn Personendaten oder urheberrechtlich geschützte Werke bearbeitet werden. "
+    },
+    {
+      "nr": 57,
+      "zeile": 66,
+      "praxisfrage": "Muss ich dokumentieren, wenn ich eine KI im Unterricht einsetze (z. B. für Prüfungen)?",
+      "juristischeFormulierung": "Besteht eine Dokumentationspflicht für den Einsatz von KI-Systemen in schulischen Kontexten?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Das Datenschutzgesetz sieht keine entsprechende Dokumentationspflicht vor. Eine solche kann sich aus Reglementen, Anordnungen oder schulinternen Richtlinien ergeben. Jedenfalls ist der Einsatz von KI-Systemen, in welchen Personendaten bearbeitet werden, im allgemein zu führenden Verzeichnis der Informationsbestände aufzunehmen."
+    },
+    {
+      "nr": 58,
+      "zeile": 67,
+      "praxisfrage": "Darf ich als LP eigenmächtig entscheiden, eine KI im Unterricht zu nutzen?",
+      "juristischeFormulierung": "Ist der Einsatz von KI-Systemen durch Lehrpersonen ohne vorgängige Genehmigung der Schulbehörden zulässig?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Grundsätzlich ja, im Rahmen des Lehrauftrages. Dabei hat sie jedoch die rechtlichen Vorgaben zu beachten, insbesondere bezüglich Datenschutz/Urheberrecht. "
+    },
+    {
+      "nr": 59,
+      "zeile": 68,
+      "praxisfrage": "Muss die Bildungsdirektion eine Liste erlaubter KI-Tools führen?",
+      "juristischeFormulierung": "Ist eine zentrale Zulassungsliste für KI-Systeme durch die Bildungsdirektion erforderlich, um rechtliche Konformität sicherzustellen?",
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Die Bildungsdirektion bzw. das Mittelschul- und Berufsbildungsamt ist zuständig für die Aufsicht über die Mittelschulen und die Berufsbildung, zudem unterstützt es Schulleitungen in Infrastruktur- und Informatikfragen. Im Amt ist das Digital Service Center zuständig für die Beschaffung von Fachapplikationen. Die Erstellung einer Liste auf dieser Ebene wäre zweckmässig. Grundsätzlich obliegt die Führung des Verzeichnisses der Informationsbestände jedoch dem jeweiligen öffentlichen Organ, d.h. der Schule."
+    },
+    {
+      "nr": 60,
+      "zeile": 69,
+      "praxisfrage": "Wer haftet, wenn eine Lehrperson eine fachlich falsche oder pädagogisch ungeeignete Information von einem KI-Chatbot übernimmt und im Unterricht verwendet, was zu Lernnachteilen bei den SuS führt?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Die Vermittlung des Unterrichtsstoffs gehört zu den zentralen Pflichten einer Lehrperson. Die ungeprüfte Übernahme von Informationen aus einem KI-Chatbot stellt eine Verletzung dieser Pflicht dar. Dies kann dienstrechtliche Konsequenzen haben, bspw. in Form eines Verweises. \nKommt es dadurch zu einem Schaden bei SuS – was einerseits wenig wahrscheinlich und andererseits schwer nachzuweisen wäre – würde grundsätzlich die Staatshaftung der Gemeinde greifen. Diese könnte gegebenenfalls Regressansprüche gegenüber der Lehrperson geltend machen, wenn die Lehrperson grobfahrlässig oder vorsätzlich gehandelt hat."
+    },
+    {
+      "nr": 61,
+      "zeile": 70,
+      "praxisfrage": "Wer trägt die rechtliche Verantwortung, wenn eine Lehrperson sich auf eine KI-gestützte Lektionsplanung verlässt, diese aber nachweislich die Lernziele des offiziellen Lehrplans verfehlt?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Siehe dazu Frage 60. "
+    },
+    {
+      "nr": 62,
+      "zeile": 71,
+      "praxisfrage": "Wer ist rechtlich verantwortlich, wenn ein von einer Lehrperson konfigurierter KI-Tutor den Schülerinnen und Schülern falsche Informationen gibt oder unangemessen mit ihnen interagiert?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Grundsätzlich bleibt die Lehrperson für die Vermittlung des Stoffes verantwortlich. Kommt es zu einem Schaden (wiederum wenig wahrscheinlich und schwer nachweisbar bei lediglich falschen Informationen - wahrscheinlicher bei unangemessener Interaktion) haftet wiederum die Gemeinde, welche u.U. Regress auf die Lehrperson nehmen kann. Liegt eine Pflichtverletzung des Herstellers oder Betreibers des KI-Tools vor, kann je nachdem auf vertraglicher und ausservertraglicher Grundlage Regress auf diese genommen werden (wiederum schwierig in der Praxis - s. Frage 52). Die Geschädigten können u.U. gestützt auf ausservertragliche Ansprüche direkt gegen den Hersteller und/oder Betreiber des KI-Tools vorgehen.\nAnsprüche auf Unterlassung, Beseitigung und Feststellung können wiederum gegen alle Beteiligten geltend gemacht werden.\nFalls es zu einem strafrechtlich relevanten Vorgehen (bspw. sexuelle Belästigung) kommt, sind Hersteller, Betreiber oder die Lehrperson bei vorsätzlichem oder fahrlässigem Verhalten/Unterlassen strafbar (s. auch Frage 52). "
+    },
+    {
+      "nr": 63,
+      "zeile": 72,
+      "praxisfrage": "Wie kann rechtlich sichergestellt werden, dass die fachliche Korrektheit einer Aufgabe nach der sprachlichen Vereinfachung durch eine KI weiterhin gewährleistet ist und wer haftet bei Fehlern?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Die Lehrperson ist für die Vermittlung des Unterrichtsstoffs verantwortlich, sie hat Outputs eines KI-Tools zu prüfen. Kommt sie dieser Pflicht nicht nach, kann dies disziplinar- oder zivilrechtliche Konsequenzen haben. Zur Haftung, s. Fragen 52 und 62. Schwerwiegende Konsequenzen dürften bei einer Vereinfachung jedoch unwahrscheinlich sein."
+    },
+    {
+      "nr": 64,
+      "zeile": 73,
+      "praxisfrage": "Wer haftet, wenn ein Schüler durch die Nutzung eines von der Schule bereitgestellten Chatbots auf ungeeignete, falsche oder jugendgefährdende Inhalte stösst?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Hier kommen verschiedene Haftungssubjekte in Betracht. Im Vordergrund stehen die zivil- und die strafrechtliche Verantwortlichkeit. Aus zivilrechtlicher Sicht haftet die Gemeinde, welche unter Umständen Regress auf die Lehrperson und/oder den Hersteller bzw. Betreiber des Chatbots nehmen kann. Geschädigte Schüler können u.U. gestützt auf ausservertragliche Ansprüche direkt gegen den Hersteller und/oder Betreiber des KI-Tools vorgehen. \nAnsprüche auf Unterlassung, Beseitigung und Feststellung können wiederum gegen alle Beteiligten geltend gemacht werden.\nDie strafrechtliche Verantwortung richtet sich nach den allgemeinen Grundsätzen, verantwortlich ist grundsätzlich direkt eine natürliche Person. Eine strafrechtliche Verantwortung der Schule kommt nur in engen Grenzen in Frage. Verantwortlich ist folglich (u.U. gleichzeitig) der Hersteller und/oder Betreiber des Chatbots, eine Lehrperson oder die Personen, welche die Nutzung des Chatbots als zulässig erklärt haben. \n\nEine wesentliche Rolle spielt hierbei aber auch, inwiefern die SuS selbst zur Verletzungshandlung beigetragen haben. Insb. ist es möglich durch gezielte Prompts oder versteckte (für das menschliche Auge nicht erkennbare) Befehle (sog. Prompt Injections) Outputs zu generieren, welche eigentlich (mit angemessenen Massnahmen seitens KI-Anbieter) verhindert werden sollten. Dieses Thema ist natürlich neu und diesbezüglich gibt es noch keine Praxis. Gemäss den allgemeinen Regeln dürften dafür aber weder die Schule noch der KI-Anbieter verantwortlich sein, sofern solche Sicherheitsmassnahmen nicht gänzlich unterlassen/ignoriert wurden. Ähnlich wie wenn ein Jugendlicher sich auf illegale Weise (bspw. mit gefälschtem Ausweis) Zugang zu altersbeschränktem Material im Internet oder in einem Laden beschafft. Die entscheidende Frage ist hier wo die Schwelle der Angemessenheit der Massnahmen liegt. Fehlen sie gänzlich, ist der KI-Anbieter/möglicherweise die Schule zumindest mitverantwortlich.  "
+    },
+    {
+      "nr": 65,
+      "zeile": 74,
+      "praxisfrage": "Welche Daten dürfen von einem Chatbot über die Interaktionen mit minderjährigen Schülerinnen und Schülern gespeichert und verarbeitet werden, und bedarf dies einer Einwilligung der Erziehungsberechtigten?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Bezüglich der Zulässigkeit der Nutzung des Chatbots überhaupt kann auf Frage 18 verwiesen werden. Die Speicherdauer von Daten richtet sich nach dem Verhältnismässigkeitsprinzip. Daten dürfen nur solange aufbewahrt werden, wie sie für die Erfüllung der konkreten Aufgabe notwendig sind. Bei Daten über die Interaktion eines Chatbots dürfte dies nur eine kurze Zeitspanne sein und die Daten sind nach der Interaktion wieder zu löschen.\nZur Einwilligung der Erziehungsberechtigten - s. Frage 41."
+    },
+    {
+      "nr": 66,
+      "zeile": 75,
+      "praxisfrage": "Welche rechtliche Verantwortung trägt die Lehrperson, die einen KI-Tutor \"freigegeben\" hat, für die Qualität und die pädagogische Eignung des Feedbacks, das dieser Tutor den Schülern gibt?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Vor dem Einsatz ist zu prüfen, ob der Tutor überhaupt eingesetzt werden kann (dazu Frage 18). Die Verantwortung für die Vermittlung des Lernstoffes trägt die Lehrperson. Sie hat auch sicherzustellen, dass das Feedback geeignet ist und gegebenenfalls zu intervenieren. \nZur Haftung - s. Frage 62."
+    },
+    {
+      "nr": 67,
+      "zeile": 76,
+      "praxisfrage": "Welche Zugriffs- und Kontrollrechte haben Lehrpersonen und Erziehungsberechtigte auf die digitalen Lerndaten, die die Basis für das personalisierte Lernen bilden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Die Lehrperson muss sicherstellen, dass sie über diejenigen Zugriffs- und Kontrollrechte verfügt, damit sie ihren Pflichten insb. das Unterrichten und Beurteilung der Leistungen nachkommen kann.\nDie Zugriffs- und Kontrollrechte der Erziehungsberechtigten beurteilt sich nach denselben Grundsätzen wie bei analogen Daten. Eine Informationspflicht besteht nur für wichtige Schulangelegenheiten, wie bspw. die Leistung und das Verhalten des Kindes. Zudem können urteilsfähige SuS oder andernfalls deren gesetzliche Vertreter (Eltern, Beistand)  bei der Schule um Auskunft über ihre  Personendaten ersuchen.\nErziehungsberechtigte (und Dritte) können unter Umständen gestützt auf das Öffentlichkeitsprinzip Zugang zu allgemeinen Informationen stellen, die durch die Schule bearbeitet werden, bspw. kann Einsicht in Unterrichtsmaterialien verlangt werden. Darunter fallen Informationen über das KI-Tool als solches. Geht es um Personendaten Dritter, ist eine Interessenabwägung vorzunehmen, diese Informationen werden in der Regel nicht bekannt gegeben."
+    },
+    {
+      "nr": 68,
+      "zeile": 77,
+      "praxisfrage": "Wie ist die Verwendung von KI-generierten Inhalten in bewerteten Arbeiten (z.B. Präsentationen) zu kennzeichnen und zu bewerten, um einen Täuschungsversuch zu vermeiden?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Aus rechtlicher Sicht gibt es dazu grundsätzlich keine Vorgaben, vorbehalten bleiben Reglemente, Anweisungen oder schulinterne Richtlinien. Es empfielt sich, diese Frage schulintern zu regeln. Ansonsten kann die Lehrperson für die konkrete Aufgabe Vorgaben machen. \n\nEine Ausnahme bildet hier der Fall, dass ein KI-generierter Output urheberrechtlich geschützte Bilder, oder aus einem urheberrechtlich geschützten Werk (i) längere Passagen oder (ii) kürzere Passagen 1:1 wiedergibt. Denn i.d.R. gibt die KI dabei keine Quelle an. Die unbesehene Verwendung eines solchen Outputs wäre eine Verletzung der Zitatpflicht (bei kürzeren Passagen 1:1) oder Plagiatsversuch (bei längeren Passagen) oder ein Verstoss gegen das Vervielfältigungs-/Verbreitungsverbots (bei Bildern). \n\nDie unbesehene Verwendung eines KI-generierten Outputs ohne gleichzeitigem Vorliegen der vorgängig beschriebenen Konstellationen ist dagegen keine urheberrechtliche Verletzung, da ein KI-generierter Output nicht urheberrechtlich geschützt ist (er erfüllt die Definition eines Werkes nicht, da keine geistige Schöpfung eines Menschen vorliegt). Interne Anweisungen/Richtlinien können dadurch selbstverständlich gleichwohl verletzt sein.\n\nI.d.R. muss aber bei substantiellen Arbeiten auch eine Erklärung unterzeichnet werden, dass die Arbeit auf Eigenleistung beruht - diese Erklärung wäre dann (unabhängig von urheberrechtlichen Aspekten) verletzt, was zum Nichtbestehen der Arbeit und disziplinarischen Konsequenzen führen könnte. Ein entsprechender Nachweis dürfte aber äusserst schwierig sein ausser in offensichtlichen Fällen (wenn bspw. bestimmte Textblöcke bestehen bleiben wie \"Möchten Sie, dass ich hierzu noch weitere Ausführungen mache oder eine Zusammenfassung in Tabellenform erstelle?\" - dies kommt in der Praxis immer häufiger auch in Newsportalen vor)."
+    },
+    {
+      "nr": 69,
+      "zeile": 78,
+      "praxisfrage": "Welche Verantwortung trägt die Schule, wenn Schüler urheberrechtlich geschütztes Material (z.B. Musikstücke, Filmclips) in einen persönlichen KI-Lernraum hochladen?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Die Veranwortung für Urheberrechtsverletzungen trägt derjenige, der sie begeht, also der Schüler. Die Schule haftet nur, wenn sie selbst eine Pflichtverletzung begangen hat (Art. 41 OR i.V.m. Art. 50 OR)."
+    },
+    {
+      "nr": 70,
+      "zeile": 79,
+      "praxisfrage": "Wie muss der Betreiber des \"Lernraums\" rechtlich sicherstellen, dass die hochgeladenen Inhalte nicht für das allgemeine Training der KI verwendet werden und die Privatsphäre des Lernenden gewahrt bleibt?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Dies wird über die jeweiligen Verträge sichergestellt, in der Regel über den Auftragsdatenbearbeitungsvertrag. Das kantonale Recht enthält Vorgaben über den Mindestinhalt für solche Verträge. Von Bedeutung sind insbesondere die AGB des Regierungsrates über die Auslagerung von Informatikdienstleistungen."
+    },
+    {
+      "nr": 71,
+      "zeile": 80,
+      "praxisfrage": "Darf ein Schüler einen urheberrechtlich geschützten Dokumentarfilm oder eine Tonaufnahme in eine KI hochladen, um eine Transkription für eine Textanalyse zu erstellen? Fällt dies unter die Ausnahme für Privatgebrauch im Bildungsbereich?",
+      "juristischeFormulierung": null,
+      "themenkategorie": "Technische Infrastruktur & Verantwortlichkeiten",
+      "antwort": "Es kommt auf das jeweilige KI-Tool an. In OKI dürfen keine urheberrechtlich geschützten Inhalte geladen werden, möglich ist dies bei einem GKI (dazu Frage 1: auf den schulinternen Gebrauch können sich auch Schüler berufen)."
+    }
+  ]
+}

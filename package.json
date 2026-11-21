@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "katalog": "python scripts/katalog.py",
+    "katalog:check": "python scripts/katalog.py --check"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",
