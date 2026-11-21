@@ -675,31 +675,6 @@ export default function Home() {
           )}
         </section>
 
-        {/* ---------- Ergänzend ---------- */}
-        <section className="mt-12 border-t border-[#e2e5e9] pt-8">
-          <Etikett>Ergänzend</Etikett>
-          <p className="mb-3 mt-1.5 text-[16px] leading-[1.55]">
-            Zwei ausdruckbare Merkblätter für Lehrpersonen. Sie sind eigene Zusammenfassungen und
-            nicht Teil der geprüften Abklärung.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <Link
-              href="/datenschutz"
-              className="rounded-full border border-[#e2e5e9] px-4 py-1.5 text-[15px] hover:border-[#0076bd]"
-              style={{ color: AKZENT }}
-            >
-              Datenschutz-Info
-            </Link>
-            <Link
-              href="/urheberrecht"
-              className="rounded-full border border-[#e2e5e9] px-4 py-1.5 text-[15px] hover:border-[#0076bd]"
-              style={{ color: AKZENT }}
-            >
-              Urheberrecht-Info
-            </Link>
-          </div>
-        </section>
-
         <footer className="mt-12 border-t border-[#e2e5e9] pt-6 text-[14px] leading-[1.6] text-[#5c6168]">
           <p>
             Herausgeber: DLH Digital Learning Hub. Quelle: Fragekatalog Sek II (FINAL), geprüft
