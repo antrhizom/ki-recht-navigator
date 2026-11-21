@@ -15,6 +15,7 @@ Notizen und werden bewusst nicht veroeffentlicht.
 """
 
 import argparse
+import datetime
 import hashlib
 import json
 import sys
@@ -127,8 +128,11 @@ def main() -> int:
     soll = lies_excel(args.excel)
 
     if not args.check:
+        # Datum der Erzeugung; wird auf der Website als «Stand» angezeigt.
+        # Kein Inhalt aus dem Excel, deshalb beim Abgleich nicht verglichen.
+        ausgabe = {"abgeglichenAm": datetime.date.today().isoformat(), **soll}
         OUT.write_text(
-            json.dumps(soll, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
+            json.dumps(ausgabe, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
         )
         print(f"{OUT.relative_to(ROOT)} geschrieben: {len(soll['fragen'])} Fragen")
         return 0

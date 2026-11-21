@@ -23,6 +23,8 @@ import {
   THEMENKATEGORIEN,
   MODELLE,
   QUELLE,
+  ABGEGLICHEN_AM,
+  datumLang,
   KATEGORIE_FARBEN,
   FARBE_OHNE_KATEGORIE,
   MODELL_ZEILE,
@@ -459,6 +461,12 @@ export default function Home() {
           </p>
           <p className="text-xs text-slate-500 mt-1">
             Antworten von valfor | Diese Informationen stellen keine Rechtsberatung dar.
+          </p>
+          <p className="text-xs text-slate-500 mt-1">
+            Stand: {datumLang(ABGEGLICHEN_AM)} |{" "}
+            <Link href="/impressum" className="underline hover:text-slate-700">
+              Impressum und Entstehung
+            </Link>
           </p>
         </footer>
       </main>

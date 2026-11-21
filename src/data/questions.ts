@@ -25,6 +25,14 @@ export interface Modell {
 }
 
 export const QUELLE = katalog.quelle;
+/** Datum (JJJJ-MM-TT), an dem die Daten zuletzt aus dem Excel erzeugt wurden. */
+export const ABGEGLICHEN_AM: string = katalog.abgeglichenAm;
+
+export function datumLang(iso: string): string {
+  const monate = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+  const [jahr, monat, tag] = iso.split("-").map(Number);
+  return `${tag}. ${monate[monat - 1]} ${jahr}`;
+}
 export const THEMENKATEGORIEN: string[] = katalog.themenkategorien;
 export const MODELLE: Modell[] = katalog.modelle;
 export const fragen: Frage[] = katalog.fragen;
