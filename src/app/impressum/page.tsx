@@ -20,7 +20,7 @@ function Abschnitt({ titel, children }: { titel: string; children: React.ReactNo
 export default function Impressum() {
   const stand = datumLang(ABGEGLICHEN_AM);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20">
+    <div className="min-h-screen bg-white">
       <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center flex-shrink-0">
@@ -74,15 +74,23 @@ export default function Impressum() {
 
         <Abschnitt titel="Was diese Seite hinzufügt">
           <p>
-            Die Seite macht den Katalog durchsuchbar und nach Themenkategorie filterbar. Farben,
-            Symbole und die optische Hervorhebung der Zeilen, die im Katalog mit «OKI:», «GKImW:»
-            oder «GKIoW:» beginnen, sind reine Gestaltung. Die Sprunglinks «In der Antwort
-            erwähnte Fragen» führen zu den Fragen, deren Nummer im Antworttext genannt ist.
+            Die Seite macht den Katalog durchsuchbar und filterbar. Die Filter verändern keinen
+            Text; sie bestimmen nur, welche Fragen angezeigt werden. Die Sprunglinks «In der
+            Antwort erwähnte Fragen» führen zu den Fragen, deren Nummer im Antworttext genannt
+            ist.
           </p>
           <p>
-            Die Seite nimmt keine eigene rechtliche Einstufung vor. Es gibt keine Ampel und keine
-            Bewertung wie «erlaubt» oder «nicht erlaubt», die über den Wortlaut des Katalogs
-            hinausgeht.
+            <strong>Filter «Umsetzbarkeit»:</strong> Er gilt für die Fragen, deren praxisnahe
+            Formulierung mit «Darf», «Dürfen» oder «Kann» beginnt. Ein Programm ordnet sie
+            ausschliesslich nach den ersten Worten der Antwort: «Ja», «Zulässig» oder
+            «Grundsätzlich ja»; «Möglich unter»; «Nein», «Nicht zulässig» oder «Grundsätzlich
+            nein». Unterscheidet die Antwort nach OKI, GKImW und GKIoW, gelten die ersten Worte
+            der jeweiligen Zeile. Alles andere steht unter «Differenziert – Wortlaut lesen».
+          </p>
+          <p>
+            Diese Ordnung ist eine Lesehilfe und keine eigene rechtliche Einstufung. Sie zitiert
+            Worte aus der Antwort, bewertet aber nicht, was danach steht: Auch ein «Ja» kann an
+            Bedingungen geknüpft sein. Massgebend ist immer der ganze Wortlaut.
           </p>
           <p>
             Arbeitsnotizen, die im Katalog neben einzelnen Antworten stehen, sind nicht Teil der

@@ -47,12 +47,63 @@ export const KATEGORIE_FARBEN: Record<string, string> = {
 };
 export const FARBE_OHNE_KATEGORIE = "#94a3b8";
 
+export type Modelltyp = "OKI" | "GKImW" | "GKIoW";
+export const MODELLTYPEN: Modelltyp[] = ["OKI", "GKImW", "GKIoW"];
+
 /** Zeilen der Antwort, die im Excel selbst mit «OKI:», «GKImW:» oder «GKIoW:» beginnen. */
 export const MODELL_ZEILE = /^\s*(OKI|GKImW|GKIoW)\s*:/;
 
-/** true, wenn die Antwort im Excel selbst nach Modell-Typen gegliedert ist. */
-export function unterscheidetModelle(frage: Frage): boolean {
-  return frage.antwort.split("\n").some((zeile) => MODELL_ZEILE.test(zeile));
+/**
+ * Fragen zur Umsetzung: Die Praxisfrage beginnt mit «Darf», «Dürfen» oder «Kann».
+ * Alle anderen (Haftung, Rechte am Ergebnis, Pflichten …) sind weitere Rechtsfragen.
+ */
+export function istUmsetzungsfrage(frage: Frage): boolean {
+  return /^(Darf|Dürfen|Kann) /.test(frage.praxisfrage);
+}
+
+/**
+ * Lesehilfe «Umsetzbarkeit»: sortiert nach den ERSTEN WORTEN der Antwort bzw. der
+ * Modell-Zeile – rein mechanisch, ohne eigene rechtliche Einstufung. Alles, was nicht
+ * wörtlich so beginnt, landet unter «lesen».
+ */
+export type Einstieg = "ja" | "moeglich" | "nein" | "lesen";
+export interface EinstiegInfo {
+  gruppe: Einstieg;
+  /** Die wörtlichen Anfangsworte, z. B. «Nicht zulässig»; leer bei «lesen». */
+  wort: string;
+}
+
+const ANFAENGE: [Einstieg, RegExp][] = [
+  ["nein", /^(Nein|Nicht zulässig|Grundsätzlich nein)(?![\wäöü])/i],
+  ["ja", /^(Ja|Zulässig|Grundsätzlich ja)(?![\wäöü])/i],
+  ["moeglich", /^(Möglich unter)(?![\wäöü])/i],
+];
+
+function einstieg(text: string): EinstiegInfo {
+  const t = text.trim();
+  for (const [gruppe, muster] of ANFAENGE) {
+    const treffer = t.match(muster);
+    if (treffer) return { gruppe, wort: treffer[1] };
+  }
+  return { gruppe: "lesen", wort: "" };
+}
+
+export type Umsetzbarkeit =
+  | { art: "proModell"; proModell: Record<Modelltyp, EinstiegInfo> }
+  | { art: "gesamt"; gesamt: EinstiegInfo };
+
+/** Nur für Fragen zur Umsetzung; sonst null. */
+export function umsetzbarkeit(frage: Frage): Umsetzbarkeit | null {
+  if (!istUmsetzungsfrage(frage)) return null;
+  const proModell: Partial<Record<Modelltyp, EinstiegInfo>> = {};
+  for (const zeile of frage.antwort.split("\n")) {
+    const kopf = zeile.match(MODELL_ZEILE);
+    if (kopf) proModell[kopf[1] as Modelltyp] = einstieg(zeile.slice(kopf[0].length));
+  }
+  if (MODELLTYPEN.every((m) => proModell[m])) {
+    return { art: "proModell", proModell: proModell as Record<Modelltyp, EinstiegInfo> };
+  }
+  return { art: "gesamt", gesamt: einstieg(frage.antwort) };
 }
 
 /** Nummern anderer Fragen, auf die der Antworttext ausdrücklich verweist («Frage 32»). */
