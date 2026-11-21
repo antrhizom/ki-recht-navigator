@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowLeft, Scale } from "lucide-react";
+import { Seitentitel, LINIE } from "@/components/ui";
 import { fragen, ABGEGLICHEN_AM, datumLang } from "@/data/questions";
 
 export const metadata: Metadata = {
@@ -10,9 +9,9 @@ export const metadata: Metadata = {
 
 function Abschnitt({ titel, children }: { titel: string; children: React.ReactNode }) {
   return (
-    <section className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 sm:p-6">
-      <h2 className="text-base font-bold text-slate-800 mb-3">{titel}</h2>
-      <div className="space-y-3 text-sm text-slate-700 leading-relaxed">{children}</div>
+    <section className="border-t pb-2 pt-6" style={{ borderColor: LINIE }}>
+      <h2 className="mb-2.5 text-[19px] font-bold">{titel}</h2>
+      <div className="space-y-3 text-[16px] leading-[1.6]">{children}</div>
     </section>
   );
 }
@@ -20,28 +19,9 @@ function Abschnitt({ titel, children }: { titel: string; children: React.ReactNo
 export default function Impressum() {
   const stand = datumLang(ABGEGLICHEN_AM);
   return (
-    <div className="min-h-screen bg-white">
-      <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-            <Scale className="w-6 h-6 text-white" />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold text-slate-800">Impressum und Entstehung</h1>
-            <p className="text-xs text-slate-500">KI-Recht Navigator</p>
-          </div>
-        </div>
-      </header>
-
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-6 space-y-4">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-600 hover:text-indigo-700"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Zurück zu den Fragen
-        </Link>
-
+    <>
+      <Seitentitel etikett="Impressum" titel="Impressum und Entstehung" />
+      <div className="space-y-2">
         <Abschnitt titel="Herausgeber">
           <p>DLH Digital Learning Hub</p>
         </Abschnitt>
@@ -74,7 +54,7 @@ export default function Impressum() {
 
         <Abschnitt titel="Was diese Seite hinzufügt">
           <p>
-            Die Seite macht den Katalog durchsuchbar und filterbar. Die Filter verändern keinen
+            Die Seite gliedert den Katalog in drei Register (Einstieg, Organisation der Usecases, Fragen filtern) und macht ihn durchsuchbar und filterbar. Die Filter verändern keinen
             Text; sie bestimmen nur, welche Fragen angezeigt werden. Die Sprunglinks «In der
             Antwort erwähnte Fragen» führen zu den Fragen, deren Nummer im Antworttext genannt
             ist.
@@ -118,7 +98,10 @@ export default function Impressum() {
           </p>
           <p>
             Die Überarbeitung und der Abgleich erfolgten mit Unterstützung eines KI-Assistenten
-            (Claude Code). An den Texten selbst hat die KI nichts formuliert.
+            (Claude Code). An den Fragen und Antworten hat die KI nichts formuliert. Die
+            erklärenden Texte in den Registern «Einstieg» und «Organisation der Usecases» sind
+            mit KI-Unterstützung entstanden; sie beschreiben die Seite und den Aufbau des
+            Katalogs, nehmen aber keine rechtliche Einstufung vor.
           </p>
         </Abschnitt>
 
@@ -128,7 +111,7 @@ export default function Impressum() {
             in seiner jeweils gültigen Fassung.
           </p>
         </Abschnitt>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
